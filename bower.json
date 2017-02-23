@@ -1,0 +1,21 @@
+{
+  "name": "aliceguoart",
+  "description": "self-employment dream",
+  "main": "index.js",
+  "authors": [
+    "Tyler Poon <tylerbill99@hotmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/toiletpapar/aliceguoart",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

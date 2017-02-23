@@ -1,0 +1,13 @@
+{
+  "blue": "#3EAAE0",
+  "white": "#FFFFFF",
+  "lightgray": "#F3F6F8",
+  "gray": "#C0C0C0",
+  "navyblue": "#334A60",
+  "black": "#000000",
+  "green": "#5ABC78",
+  "activegreen": "#43a35f",
+  "errorred": "#FFCCCC",
+  "universalPadding": "0px 60px",
+  "universalSpacing": "40px 0px"
+}
