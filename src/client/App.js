@@ -1,7 +1,7 @@
 import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
-// import { Routes } from './components/Routes/index'
+import { Routes } from './components/Routes/index'
 import universalTheme from './styles/universal.json'
 
 if (process.env.WEBPACK) {
@@ -14,7 +14,7 @@ if (process.env.WEBPACK) {
 const App = (props) => {
   return (
     <ThemeProvider theme={universalTheme}>
-      <div>Hello World!</div>
+      <Routes />
     </ThemeProvider>
   )
 }
