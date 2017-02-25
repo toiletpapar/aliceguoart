@@ -1,18 +1,14 @@
 import styled from 'styled-components'
 
-const matchColour = (theme, colour) => {
-  colour = colour ? colour.trim().toLowerCase() : undefined
-  const hexColour = theme[colour]
-
-  return hexColour || theme.darkgray
-}
+import { Styling } from '../../Utils/index'
 
 const BaseHeader = styled('h1')`
   margin: ${(props) => props.title ? '1em 0em' : '0.5em 0em'};
   font-weight: ${(props) => props.thin ? props.theme.thinweight : props.theme.thickweight};
   font-family: ${(props) => props.theme.fontfamily};
   text-align: ${(props) => props.align || 'left'};
-  color: ${(props) => matchColour(props.theme, props.colour)};
+  color: ${(props) => Styling.matchColour(props.theme, props.colour)};
+  display: ${(props) => props.inline ? 'inline' : 'block'}
 `
 
 const LargeHeader = styled(BaseHeader)`

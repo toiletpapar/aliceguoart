@@ -4,12 +4,12 @@ import {
   BlockContainer,
 } from '../BasicComponents/index'
 
-const Home = (props) => {
+const About = (props) => {
   return (
     <BlockContainer>
-      Welcome to Home!
+      Welcome to About!
     </BlockContainer>
   )
 }
 
-export default Home
+export default About
