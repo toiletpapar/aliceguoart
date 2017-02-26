@@ -16,5 +16,5 @@
   "thinweight": 100,
   "thickweight": 500,
   "fontfamily": "Source Sans Pro, sans-serif",
-  "testcolour": "#708090"
+  "viewHeight": "50vh"
 }

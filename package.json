@@ -30,6 +30,7 @@
     "react-router": "next",
     "react-router-dom": "next",
     "react-select": "^1.0.0-rc.3",
+    "react-slick": "^0.14.6",
     "recompose": "^0.22.0",
     "redux": "^3.6.0",
     "redux-observable": "^0.13.0",

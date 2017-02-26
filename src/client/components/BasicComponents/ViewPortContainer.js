@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Styling } from '../../Utils/index'
 
 const ViewPortContainer = styled('div')`
-  height: 50vh
+  height: ${(props) => props.theme.viewHeight}
   background-color: ${(props) => Styling.matchColour(props.theme, props.colour) || props.theme.lightgray}
 `
 
