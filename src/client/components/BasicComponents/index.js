@@ -3,9 +3,11 @@ import { SmallHeader, RegularHeader, LargeHeader } from './Headers'
 import BlockContainer from './BlockContainer'
 import Icon from './Icon'
 import InlineContainer from './InlineContainer'
-import Column from './Column'
-import CenterContainer from './CenterContainer'
 import SpacedContainer from './SpacedContainer'
+import ViewPortContainer from './ViewPortContainer'
+import MainContainer from './MainContainer'
+import Paragraph from './Paragraph'
+import {MultiColumnContainer, Column} from './MultiColumnContainer'
 
 export {
   Image,
@@ -16,6 +18,9 @@ export {
   InlineContainer,
   BlockContainer,
   Column,
-  CenterContainer,
   SpacedContainer,
+  ViewPortContainer,
+  MainContainer,
+  Paragraph,
+  MultiColumnContainer,
 }

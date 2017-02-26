@@ -7,7 +7,7 @@ const BaseHeader = styled('h1')`
   font-weight: ${(props) => props.thin ? props.theme.thinweight : props.theme.thickweight};
   font-family: ${(props) => props.theme.fontfamily};
   text-align: ${(props) => props.align || 'left'};
-  color: ${(props) => Styling.matchColour(props.theme, props.colour)};
+  color: ${(props) => Styling.matchColour(props.theme, props.colour) || props.theme.darkgray};
   display: ${(props) => props.inline ? 'inline' : 'block'}
 `
 
