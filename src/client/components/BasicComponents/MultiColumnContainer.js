@@ -11,7 +11,7 @@ const Column = styled('div')`
   flex-direction: column;
   justify-content: ${(props) => props.justify || 'flex-start'};
   align-items: ${(props) => props.align || 'flex-start'};
-  flex: 1;
+  flex: ${(props) => props.size || 1};
   margin: ${(props) => props.theme.space};
 `
 
