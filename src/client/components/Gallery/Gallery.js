@@ -4,9 +4,35 @@ import {
   BlockContainer,
 } from '../BasicComponents/index'
 
+import {
+  ImageGallery,
+} from './index'
+
 const Gallery = (props) => {
+  const srcs = [
+    '/gallery/cat.jpg',
+    '/gallery/puppy.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy2.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy2.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy2.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy.jpg',
+    '/gallery/cat.jpg',
+    '/gallery/puppy2.jpg',
+    '/gallery/cat.jpg',
+  ]
+
   return (
-    <BlockContainer>Welcome To Gallery!</BlockContainer>
+    <ImageGallery srcs={srcs} />
   )
 }
 
