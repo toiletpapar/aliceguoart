@@ -11,46 +11,41 @@ const masonryOptions = {
   columnWidth: '.grid-sizer',
   itemSelector: '.grid-item',
   percentPosition: true,
-  gutter: '.gutter-sizer',
 }
 
-const GutterSize = styled(BlockContainer)`
-  width: 0.5%;
-`
-
 const GridImage = styled(Image)`
-  margin: 4px 0px;
+  padding: 3px;
 
   /* Tiny Screens */
   @media screen
     and (max-width: 550px) {
-      width: 99.5%;
+      width: 100%;
   };
 
   /* Min sized windows */
   @media screen
     and (min-width: 551px)
     and (max-width: 799px) {
-      width: 49.5%;
+      width: 50%;
   };
 
   @media screen
     and (min-width: 800px)
     and (max-width: 1199px) {
-      width: 32.8%;
+      width: 33%;
   };
 
   /* Laptops */
   @media screen
     and (min-width: 1200px)
     and (max-width: 1600px) {
-      width: 24.5%;
+      width: 25%;
   };
 
   /* Large Screens */
   @media screen
     and (min-width: 1601px) {
-      width: 19.5%;
+      width: 20%;
   };
 `
 
@@ -67,7 +62,6 @@ class ImageGallery extends React.Component {
 
     return (
       <Masonry options={masonryOptions}>
-        <GutterSize className='gutter-sizer' />
         <GridImage className='grid-sizer' />
         {childElements}
       </Masonry>
