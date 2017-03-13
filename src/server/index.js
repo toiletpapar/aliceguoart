@@ -11,7 +11,7 @@ import App from '../client/App'
 import makeStore from '../client/store'
 import { compileInitialState } from '../client/reducers/InitialStates'
 
-const port = process.env.NODE_PORT || 9000
+const port = process.env.PORT || process.env.NODE_PORT || 9000
 const host = process.env.NODE_HOST || 'localhost'
 const nodeEnv = process.env.NODE_ENV || 'development'
 
