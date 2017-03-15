@@ -1,10 +1,6 @@
 import React from 'react'
 
 import {
-  BlockContainer,
-} from '../BasicComponents/index'
-
-import {
   ImageGallery,
 } from './index'
 
