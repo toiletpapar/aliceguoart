@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { Styling } from '../../Utils/index'
+import { Styling } from '../../../Utils/index'
 
 const ViewPortContainer = styled('div')`
   height: ${(props) => props.theme.viewHeight}

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { BlockContainer, SpacedContainer } from '../BasicComponents/index'
+import { BlockContainer, SpacedContainer } from '../index'
 import { Label } from './index'
 
 const StyledTextInput = styled('input')`

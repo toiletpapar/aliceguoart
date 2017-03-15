@@ -1,7 +1,7 @@
 import React from 'react'
 
 import SlickSlider from 'react-slick'
-import { ViewPortContainer } from '../BasicComponents/index'
+import { ViewPortContainer } from '../index'
 
 const defaults = {
   dots: true,

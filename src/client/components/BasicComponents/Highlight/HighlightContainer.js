@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-import {
-  BlockContainer,
-} from '../BasicComponents/index'
-
-const HighlightContainer = styled(BlockContainer)`
+const HighlightContainer = styled('div')`
   border: ${(props) => '1px solid ' + props.theme.gray};
   width: 100%;
   margin: ${(props) => props.theme.universalSpacing}

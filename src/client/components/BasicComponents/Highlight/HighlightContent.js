@@ -1,10 +1,6 @@
 import styled from 'styled-components'
 
-import {
-  BlockContainer,
-} from '../BasicComponents/index'
-
-const HighlightContent = styled(BlockContainer)`
+const HighlightContent = styled('div')`
   padding: ${(props) => `5px ${props.theme.space}`}
 `
 

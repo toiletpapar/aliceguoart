@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Icon, SpacedContainer } from '../BasicComponents/index'
+import { Icon, SpacedContainer } from '../index'
 import { Label } from './index'
 
 class Checkbox extends React.Component {

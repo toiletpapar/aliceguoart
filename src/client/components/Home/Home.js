@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Highlight } from '../Highlight/index'
-
 import {
   SlideImage,
 } from './index'
@@ -11,9 +9,9 @@ import {
   BlockContainer,
   MultiColumnContainer,
   Column,
+  Highlight,
+  Slider,
 } from '../BasicComponents/index'
-
-import { Slider } from '../Slider/index'
 
 const Home = (props) => {
   return (

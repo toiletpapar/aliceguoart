@@ -3,7 +3,8 @@ import styled from 'styled-components'
 const MultiColumnContainer = styled('div')`
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: ${(props) => props.align || 'space-around'};
+  align-items: ${(props) => props.justify || 'flex-start'};
 `
 
 const Column = styled('div')`
@@ -11,8 +12,9 @@ const Column = styled('div')`
   flex-direction: column;
   justify-content: ${(props) => props.justify || 'flex-start'};
   align-items: ${(props) => props.align || 'flex-start'};
-  flex: ${(props) => props.size || 1};
-  margin: ${(props) => props.theme.space};
+  flex: ${(props) => props.size || props.size === 0 ? props.size : 1};
+  margin: ${(props) => props.margin || '0px'};
+  ${(props) => props.widthExpand ? 'width: 100%;' : ''}
 `
 
 export {

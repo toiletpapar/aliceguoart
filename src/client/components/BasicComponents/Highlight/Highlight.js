@@ -1,12 +1,12 @@
 import React from 'react'
 
 import { HighlightContainer, HighlightImage, HighlightContent } from './index'
-import { Button } from '../Inputs/index'
 
 import {
   RegularHeader,
   Paragraph,
-} from '../BasicComponents/index'
+  Button,
+} from '../index'
 
 const Highlight = (props) => {
   return (
