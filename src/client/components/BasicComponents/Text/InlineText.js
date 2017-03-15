@@ -6,6 +6,8 @@ const InlineText = styled('span')`
   overflow: hidden;
   white-space: ${(props) => props.whiteSpace || 'nowrap'};
   text-overflow: ${(props) => props.textOverflow || 'ellipsis'};
+  font-family: ${(props) => props.theme.fontfamily};
+  font-size: ${(props) => props.fontSize || props.theme.fontsize};
 `
 
 export default InlineText

@@ -1,13 +1,17 @@
 {
   "blue": "#3EAAE0",
+  "darkerblue": "#4487E3",
   "white": "#FFFFFF",
-  "lightgray": "#F3F3F3",
+  "lightgray": "#F3F6F8",
+  "lightergray": "#CCCCCC",
   "gray": "#C0C0C0",
   "darkgray": "#666666",
   "navyblue": "#334A60",
   "black": "#222222",
   "green": "#5ABC78",
+  "darkergreen": "#3D9F74",
   "activegreen": "#43a35f",
+  "goldenrod": "#FFA300",
   "errorred": "#FFCCCC",
   "universalPadding": "0px 200px 0px 200px",
   "universalSpacing": "40px 0px 40px 0px",
@@ -16,5 +20,6 @@
   "thinweight": 100,
   "thickweight": 500,
   "fontfamily": "Source Sans Pro, sans-serif",
+  "fontsize": "1.2em",
   "viewHeight": "50vh"
 }

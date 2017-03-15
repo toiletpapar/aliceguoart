@@ -17,7 +17,7 @@ const Highlight = (props) => {
         <Paragraph>
           {props.content}
         </Paragraph>
-        <Button>Read More</Button>
+        <Button padding='5px 10px'>Read More</Button>
       </HighlightContent>
     </HighlightContainer>
   )

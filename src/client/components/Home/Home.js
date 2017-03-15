@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import {
   SlideImage,
@@ -12,6 +13,10 @@ import {
   Highlight,
   Slider,
 } from '../BasicComponents/index'
+
+const HighlightColumn = styled(Column)`
+  margin: ${(props) => `0px ${props.theme.space}`};
+`
 
 const Home = (props) => {
   return (
@@ -31,14 +36,14 @@ const Home = (props) => {
 
       {/* Updates */}
       <MultiColumnContainer>
-        <Column>
+        <HighlightColumn>
           <Highlight title='Presidency' content='We are celebrating Alice Guo for president!' src='/home/highlights/cat.jpg' />
           <Highlight title='Opening Ceremony' content='Today marks the remarkable day that Alice Guo Arts officially goes online!' src='/home/highlights/cat.jpg' />
-        </Column>
-        <Column>
+        </HighlightColumn>
+        <HighlightColumn>
           <Highlight title='First Step' content='Alice Guo just donated her latest original to The Crystal Ball Gala. Find out what you can do to help make dreams come true.' src='/home/highlights/cat.jpg' />
           <Highlight title='The Bird Collection' content='Check out the latest collection by Alice Guo featuring many birds of the wild.' src='/home/highlights/cat.jpg' />
-        </Column>
+        </HighlightColumn>
       </MultiColumnContainer>
     </MainContainer>
   )

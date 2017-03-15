@@ -4,7 +4,7 @@ const HighlightContainer = styled('div')`
   border: ${(props) => '1px solid ' + props.theme.gray};
   width: 100%;
   margin: ${(props) => props.theme.universalSpacing}
-  height: 350px;
+  height: 375px;
   display: flex;
   flex-direction: column;
 `
