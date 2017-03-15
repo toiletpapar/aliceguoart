@@ -10,6 +10,7 @@ const BaseHeader = styled('h1')`
   display: ${(props) => props.display || 'block'};
   overflow: ${(props) => props.overflow || 'hidden'};
   white-space: ${(props) => props.whiteSpace || 'nowrap'};
+  display: ${(props) => props.inline ? 'inline' : 'block'};
 `
 
 const LargeHeader = styled(BaseHeader)`
