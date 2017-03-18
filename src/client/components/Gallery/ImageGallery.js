@@ -5,6 +5,9 @@ import Masonry from 'react-masonry-component'
 import {
   BlockContainer,
   Image,
+  Modal,
+  Button,
+  RegularHeader,
 } from '../BasicComponents/index'
 
 const masonryOptions = {
@@ -51,11 +54,41 @@ const GridImage = styled(Image)`
 
 // Given an array of images, layout and display them
 class ImageGallery extends React.Component {
+  static modalStyle = {
+    overlay: {
+      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+    },
+  }
+
+  static initialState = {
+    modalOpen: false,
+    description: null,
+  }
+
+  constructor (props) {
+    super(props)
+
+    this.state = ImageGallery.initialState
+  }
+
+  componentWillReceiveProps (nextProps) {
+    if (this.props.srcs !== nextProps.srcs) {
+      this.setState(ImageGallery.initialState)
+    }
+  }
+
+  setModal = (open, description) => () => {
+    this.setState({
+      modalOpen: open,
+      description,
+    })
+  }
+
   render () {
     const childElements = this.props.srcs.map((src, index) => {
       return (
         <BlockContainer key={index}>
-          <GridImage className='grid-item' src={src} />
+          <GridImage className='grid-item' src={src} onClick={this.setModal(true, src)} />
         </BlockContainer>
       )
     })
@@ -64,6 +97,10 @@ class ImageGallery extends React.Component {
       <Masonry options={masonryOptions}>
         <GridImage className='grid-sizer' />
         {childElements}
+        <Modal style={ImageGallery.modalStyle} isOpen={this.state.modalOpen} contentLabel='Modal' onRequestClose={this.setModal(false)}>
+          <RegularHeader>{this.state.description}</RegularHeader>
+          <Button onClick={this.setModal(false)}>Close</Button>
+        </Modal>
       </Masonry>
     )
   }

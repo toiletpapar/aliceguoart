@@ -11,6 +11,7 @@ import {NavBar} from './NavBar/index'
 import {Table} from './Table/index'
 import {Slider} from './Slider/index'
 import {Highlight} from './Highlight/index'
+import {Modal} from './Modal/index'
 
 export {
   Image,
@@ -53,4 +54,5 @@ export {
   Table,
   Slider,
   Highlight,
+  Modal,
 }
