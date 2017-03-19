@@ -14,6 +14,7 @@ import {
   Icon,
   MultiColumnContainer,
   Anchor,
+  IconAnchor,
 } from '../BasicComponents/index'
 
 const About = (props) => {
@@ -53,9 +54,9 @@ const About = (props) => {
             <Column margin='0px 0px 0px 25px'>
               <Paragraph>Or connect with us on social media:</Paragraph>
               <BlockContainer>
-                <Icon className='fa fa-twitter' />
-                <Icon className='fa fa-facebook' />
-                <Icon className='fa fa-instagram' />
+                <IconAnchor to='https://twitter.com/aliceguoart' icon='fa fa-twitter' />
+                <IconAnchor to='https://www.facebook.com/aliceguoart/' icon='fa fa-facebook' />
+                <IconAnchor to='https://www.instagram.com/aliceguoart/?hl=en' icon='fa fa-instagram' />
               </BlockContainer>
             </Column>
           </MultiColumnContainer>

@@ -1,6 +1,6 @@
 import Image from './Image'
-import Icon from './Icon'
 
+import {Icon, IconAnchor} from './Icon'
 import {ColourBox} from './ColourBox/index'
 import {Button, Checkbox, Form, Label, Radio, RadioGroup, RadioContainer, Select, TextInput} from './Inputs/index'
 import {PictureLink} from './PictureLink/index'
@@ -16,6 +16,7 @@ import {Modal} from './Modal/index'
 export {
   Image,
   Icon,
+  IconAnchor,
 
   /* Containers */
   InlineContainer,

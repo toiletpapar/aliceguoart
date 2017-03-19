@@ -7,7 +7,7 @@ const PictureLink = ({src = '', name = '', to = null, active = false, className}
   return (
     <Link to={to} className={className}>
       <Image src={src} />
-      {name ? <SmallHeader colour='white' align='center'>{name}</SmallHeader> : <div />}
+      {name ? <SmallHeader colour='white' align='center'>{name}</SmallHeader> : null}
     </Link>
   )
 }
