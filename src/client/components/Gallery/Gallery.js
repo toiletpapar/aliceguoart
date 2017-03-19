@@ -14,6 +14,9 @@ const Gallery = (props) => {
     '/gallery/Owl.png',
     '/gallery/Snuggling.png',
     '/gallery/Watching the Wave.png',
+    '/gallery/Fishing.jpg',
+    '/gallery/Meung.jpg',
+    '/gallery/Reflecting on the Blue.png',
   ]
 
   return (
