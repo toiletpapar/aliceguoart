@@ -6,25 +6,14 @@ import {
 
 const Gallery = (props) => {
   const srcs = [
-    '/gallery/cat.jpg',
-    '/gallery/puppy.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy2.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy2.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy2.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy.jpg',
-    '/gallery/cat.jpg',
-    '/gallery/puppy2.jpg',
-    '/gallery/cat.jpg',
+    '/gallery/Afternoon.png',
+    '/gallery/And so We Wander.png',
+    '/gallery/Backpacking.png',
+    '/gallery/Dreamer.png',
+    '/gallery/Hello.png',
+    '/gallery/Owl.png',
+    '/gallery/Snuggling.png',
+    '/gallery/Watching the Wave.png',
   ]
 
   return (

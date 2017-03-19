@@ -5,7 +5,7 @@ import {ColourBox} from './ColourBox/index'
 import {Button, Checkbox, Form, Label, Radio, RadioGroup, RadioContainer, Select, TextInput} from './Inputs/index'
 import {PictureLink} from './PictureLink/index'
 import {BlockContainer, InlineContainer, MultiColumnContainer, SpacedContainer, BorderContainer, Card, Column, MainContainer, ViewPortContainer} from './Containers/index'
-import {SmallHeader, RegularHeader, LargeHeader, InlineText, Paragraph} from './Text/index'
+import {SmallHeader, RegularHeader, LargeHeader, InlineText, Paragraph, Anchor} from './Text/index'
 import {Sidebar} from './Sidebar/index'
 import {NavBar} from './NavBar/index'
 import {Table} from './Table/index'
@@ -45,6 +45,7 @@ export {
   LargeHeader,
   InlineText,
   Paragraph,
+  Anchor,
 
   /* Other */
   ColourBox,

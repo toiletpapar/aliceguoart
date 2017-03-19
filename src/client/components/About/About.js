@@ -1,7 +1,6 @@
 import React from 'react'
 
 import {
-  MissionContainer,
   FreeImage,
 } from './index'
 
@@ -14,48 +13,44 @@ import {
   Column,
   Icon,
   MultiColumnContainer,
+  Anchor,
 } from '../BasicComponents/index'
 
 const About = (props) => {
   return (
     <BlockContainer>
-      <MissionContainer>
-        <LargeHeader align='center'>"She's a very nice person with a poo for a head that stinks up the world like it's the largest toilet out there"</LargeHeader>
-      </MissionContainer>
+      {/* <MissionContainer>
+        <SpacedContainer>
+          <LargeHeader align='center' whiteSpace='normal'>"Insert Text Here"</LargeHeader>
+        </SpacedContainer>
+      </MissionContainer> */}
       <MainContainer>
         <SpacedContainer>
-          <FreeImage src='/about/alice_guo_about.jpg' />
+          <FreeImage src='/about/Alice_Profile.jpg' />
+          <LargeHeader>Artist Statement</LargeHeader>
           <Paragraph>
-            Lorem ipsum dolor sit amet, eu consequat nonummy eu gravida,
-            est donec ante rhoncus dignissim commodo, nunc nulla mus ac. Tristique nullam,
-            lectus varius facilisis suspendisse, risus imperdiet pede. Dis quis enim enim sit quis integer,
-            consectetuer vel vestibulum tortor quam proin, et metus malesuada arcu mauris convallis quam.
-            Ut ac laoreet, ligula hendrerit in ad. Convallis pellentesque at duis purus, velit aliquam neque lacinia,
-            in pellentesque eget integer, ornare magna suscipit quisque wisi dolor. Morbi porttitor, amet pharetra sed
-            ornare elit sodales. Vehicula metus tristique placerat ante vel facilisis, ante vel diam, nibh hymenaeos massa
-            vel sed ante lectus, metus aliquet duis leo molestie. Cum viverra laoreet, cum a pellentesque dictumst dolor eu,
-            et dui vulputate sit sit sed nibh, molestie eros leo mauris molestie ligula, sollicitudin hendrerit malesuada est
-            justo in ac. Sit donec, pulvinar tortor egestas faucibus quis cum, justo ultricies at lacus, molestie amet etiam.
-            Suspendisse turpis tellus tincidunt sed sit. Sit mollis, ut sed tempus in bibendum nulla.
+            I like to explore nature and to draw inspiration from the wonders of the real world.
+            My favourite thing to do is to capture any beautiful moment through photography and then to reimagine the experience through my own lens.
+            My focus is specific; I love having a main character in my pieces.
+            Afterwards, I enhance the most remarkable qualities of the character while keeping it simple, so that the audience can connect with the subject the way I did and relive my memory.
           </Paragraph>
+          <LargeHeader>About Me</LargeHeader>
           <Paragraph>
-            Consequat curabitur quis dolor ligula.
-            Id felis metus, dui maecenas tincidunt pellentesque, nunc aliquam sed nec nullam tempus, eu leo pede donec.
-            Morbi at condimentum pede, cras ac mauris mauris, vel sem sodales odio purus donec.
-            Vitae iaculis nulla in praesent at, cras ac consequat sem etiam.
-            Sit mollis dui vitae tellus, varius nam quis ultricies nullam. Lorem ipsum dolor sit amet, eu consequat nonummy eu gravida,
-            est donec ante rhoncus dignissim commodo, nunc nulla mus ac. Tristique nullam,
-            lectus varius facilisis suspendisse, risus imperdiet pede.
+            I have always enjoyed creating things.
+            I started learning to draw at the age of three, and it was so much fun that I continued to do so until I was twelve.
+            During my formal training, I practiced sketch, gouache, watercolour, acrylic, oil, and modern batik.
           </Paragraph>
+          {/* <Paragraph>
+            Now I am on a journey to
+          </Paragraph> */}
         </SpacedContainer>
         <SpacedContainer>
           <LargeHeader>Contact Us</LargeHeader>
           <MultiColumnContainer>
-            <Column>
-              <Paragraph>Have a question or just want to comment? Send us an Email! We'd love to hear from you.</Paragraph>
-              <Paragraph>aliceguoart@gmail.com</Paragraph>
+            <Column margin='0px 25px 0px 0px'>
+              <Paragraph>Have a question or just want to comment? Send us an email to <Anchor href='mailto:alice@aliceguoart.ca' target='_top'>alice@aliceguoart.ca</Anchor>! We'd love to hear from you.</Paragraph>
             </Column>
-            <Column>
+            <Column margin='0px 0px 0px 25px'>
               <Paragraph>Or connect with us on social media:</Paragraph>
               <BlockContainer>
                 <Icon className='fa fa-twitter' />
