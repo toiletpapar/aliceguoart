@@ -6,7 +6,6 @@ import {
 
 const SlideImage = styled(Image)`
   height: ${(props) => props.height || props.theme.viewHeight};
-  width: 100%;
   margin: 0 auto;
 `
 

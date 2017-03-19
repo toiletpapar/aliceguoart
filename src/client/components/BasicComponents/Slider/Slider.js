@@ -14,7 +14,7 @@ const defaults = {
   fade: true,
   centerMode: true,
   pauseOnHover: false,
-  centerPadding: 0,
+  /* centerPadding: 0, */
 }
 
 const Slider = (props) => {
