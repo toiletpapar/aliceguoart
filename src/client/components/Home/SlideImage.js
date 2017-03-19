@@ -5,7 +5,8 @@ import {
 } from '../BasicComponents/index'
 
 const SlideImage = styled(Image)`
-  height: ${(props) => props.theme.viewHeight};
+  height: ${(props) => props.height || props.theme.viewHeight};
+  width: 100%;
   margin: 0 auto;
 `
 

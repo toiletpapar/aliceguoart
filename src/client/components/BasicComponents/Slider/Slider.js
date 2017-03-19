@@ -14,6 +14,7 @@ const defaults = {
   fade: true,
   centerMode: true,
   pauseOnHover: false,
+  centerPadding: 0,
 }
 
 const Slider = (props) => {
@@ -36,7 +37,7 @@ const Slider = (props) => {
   }
 
   return (
-    <ViewPortContainer colour={bgColour}>
+    <ViewPortContainer colour={bgColour} {...settings}>
       <SlickSlider {...settings}>
         {children}
       </SlickSlider>

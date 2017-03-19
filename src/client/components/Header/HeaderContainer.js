@@ -4,7 +4,7 @@ import {
 } from '../BasicComponents/index'
 
 const HeaderContainer = styled(BlockContainer)`
-  height: 60px;
+  height: 9vh;
   padding: ${(props) => props.theme.universalPadding};
   background-color: ${(props) => props.theme.black};
   display: flex;

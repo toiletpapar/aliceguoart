@@ -8,6 +8,7 @@ if (process.env.WEBPACK) {
   require('react-select/dist/react-select.css')
   require('../../bower_components/font-awesome/css/font-awesome.min.css')
   require('./styles/Select.css')
+  require('./styles/Slider.css')
 }
 
 // App
