@@ -11,10 +11,9 @@ import {
   SpacedContainer,
   Paragraph,
   Column,
-  Icon,
   MultiColumnContainer,
   Anchor,
-  IconAnchor,
+  SocialMedia,
 } from '../BasicComponents/index'
 
 const About = (props) => {
@@ -28,14 +27,13 @@ const About = (props) => {
       <MainContainer>
         <SpacedContainer>
           <FreeImage src='/about/Alice_Profile.jpg' />
-          <LargeHeader>Artist Statement</LargeHeader>
+          <LargeHeader>About Me</LargeHeader>
           <Paragraph>
             I like to explore nature and to draw inspiration from the wonders of the real world.
             My favourite thing to do is to capture any beautiful moment through photography and then to reimagine the experience through my own lens.
             My focus is specific; I love having a main character in my pieces.
             Afterwards, I enhance the most remarkable qualities of the character while keeping it simple, so that the audience can connect with the subject the way I did and relive my memory.
           </Paragraph>
-          <LargeHeader>About Me</LargeHeader>
           <Paragraph>
             I have always enjoyed creating things.
             I started learning to draw at the age of three, and it was so much fun that I continued to do so until I was twelve.
@@ -53,11 +51,7 @@ const About = (props) => {
             </Column>
             <Column margin='0px 0px 0px 25px'>
               <Paragraph>Or connect with us on social media:</Paragraph>
-              <BlockContainer>
-                <IconAnchor to='https://twitter.com/aliceguoart' icon='fa fa-twitter' />
-                <IconAnchor to='https://www.facebook.com/aliceguoart/' icon='fa fa-facebook' />
-                <IconAnchor to='https://www.instagram.com/aliceguoart/?hl=en' icon='fa fa-instagram' />
-              </BlockContainer>
+              <SocialMedia />
             </Column>
           </MultiColumnContainer>
         </SpacedContainer>

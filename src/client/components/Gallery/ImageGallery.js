@@ -2,12 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import Masonry from 'react-masonry-component'
 
+import universal from '../../styles/universal.json'
+import {TextFormatter} from '../../Utils/index'
+
 import {
   BlockContainer,
   Image,
   Modal,
   Button,
-  RegularHeader,
+  MultiColumnContainer,
+  SpacedContainer,
+  SocialMedia,
+  LargeHeader,
 } from '../BasicComponents/index'
 
 const masonryOptions = {
@@ -52,17 +58,28 @@ const GridImage = styled(Image)`
   };
 `
 
+const ModalImage = styled(Image)`
+  max-width: 50%;
+  max-height: 60vh;
+  margin-top: 1em;
+`
+
 // Given an array of images, layout and display them
 class ImageGallery extends React.Component {
   static modalStyle = {
+    content: {
+      padding: `20px ${universal.space} ${universal.space} ${universal.space}`,
+      left: `${universal.pad}`,
+      right: `${universal.pad}`,
+    },
     overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.2)',
+      backgroundColor: 'rgba(0, 0, 0, 0.4)',
     },
   }
 
   static initialState = {
     modalOpen: false,
-    description: null,
+    artContent: null,
   }
 
   constructor (props) {
@@ -77,10 +94,12 @@ class ImageGallery extends React.Component {
     }
   }
 
-  setModal = (open, description) => () => {
+  setModal = (open, src, description, displayName) => () => {
     this.setState({
       modalOpen: open,
+      src,
       description,
+      displayName,
     })
   }
 
@@ -88,7 +107,7 @@ class ImageGallery extends React.Component {
     const childElements = this.props.srcs.map((src, index) => {
       return (
         <BlockContainer key={index}>
-          <GridImage className='grid-item' src={src} onClick={this.setModal(true, src)} />
+          <GridImage className='grid-item' src={src.imgSrc} onClick={this.setModal(true, src.imgSrc, src.description, src.displayName)} />
         </BlockContainer>
       )
     })
@@ -98,8 +117,15 @@ class ImageGallery extends React.Component {
         <GridImage className='grid-sizer' />
         {childElements}
         <Modal style={ImageGallery.modalStyle} isOpen={this.state.modalOpen} contentLabel='Modal' onRequestClose={this.setModal(false)}>
-          <RegularHeader>{this.state.description}</RegularHeader>
-          <Button onClick={this.setModal(false)}>Close</Button>
+          <LargeHeader align='center'>{this.state.displayName}</LargeHeader>
+          <MultiColumnContainer align='flex-start'>
+            <ModalImage src={this.state.src} />
+            <SpacedContainer spacing={`0px 0px ${universal.space} ${universal.space}`}>
+              {this.state.description ? TextFormatter.paragraphizeText(this.state.description) : null}
+              <SocialMedia />
+              <Button onClick={this.setModal(false)} padding='10px'>Close</Button>
+            </SpacedContainer>
+          </MultiColumnContainer>
         </Modal>
       </Masonry>
     )

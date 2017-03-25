@@ -1,4 +1,5 @@
 import Image from './Image'
+import SocialMedia from './SocialMedia'
 
 import {Icon, IconAnchor} from './Icon'
 import {ColourBox} from './ColourBox/index'
@@ -57,4 +58,5 @@ export {
   Slider,
   Highlight,
   Modal,
+  SocialMedia,
 }

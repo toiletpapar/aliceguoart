@@ -1,0 +1,76 @@
+{
+  "galleryData": [
+    {
+      "id": "peonies",
+      "displayName": "Peonies, 2014",
+      "imgSrc": "/gallery/Peonies.jpg",
+      "description": "Modern Batik.\n\nThis piece was created as a mother's day gift for my family of three."
+    },
+    {
+      "id": "afternoon",
+      "displayName": "Afternoon, 2017",
+      "imgSrc": "/gallery/Afternoon.png",
+      "description": "Ink Drawing.\n\nToo lazy to get food? Going to the Toronto Zoo during one of the coldest Canadian winter was not such a bad idea!"
+    },
+    {
+      "id": "and_so_we_wander",
+      "displayName": "And so We Wander, 2017",
+      "imgSrc": "/gallery/And so We Wander.png",
+      "description": "Acrylic on Canvas.\n\nInspired by the mesmerizing wall of jelly fish during my first visit to Ripley's Aquarium."
+    },
+    {
+      "id": "backpacking",
+      "displayName": "Backpacking, 2017",
+      "imgSrc": "/gallery/Backpacking.png",
+      "description": "Ink Drawing.\n\nInspired by the red pandas who did not let snow interfere with their journey. Going to the Toronto Zoo during one of the coldest Canadian winter days was not such a bad idea!"
+    },
+    {
+      "id": "dreamer",
+      "displayName": "Dreamer, 2016",
+      "imgSrc": "/gallery/Dreamer.png",
+      "description": "Watercolour.\n\nOmning llama from the Eby Farmstead in Waterloo Park."
+    },
+    {
+      "id": "hello",
+      "displayName": "Hello, 2016",
+      "imgSrc": "/gallery/Hello.png",
+      "description": "Watercolour.\n\nShall we be friends? Stray cat from Jamaica."
+    },
+    {
+      "id": "owl",
+      "displayName": "Watched, 2017",
+      "imgSrc": "/gallery/Owl.png",
+      "description": "Ink Drawing.\n\nMaybe you should look away. Going to the Toronto Zoo during one of the coldest Canadian winter was not such a bad idea!"
+    },
+    {
+      "id": "snuggling",
+      "displayName": "Snuggling, 2017",
+      "imgSrc": "/gallery/Snuggling.png",
+      "description": "Ink Drawing.\n\nInspired by my awesome friend Lucy Fan's bunnies and those good old sleeping parties back in UW. This drawing was also used as the design of my very first card!"
+    },
+    {
+      "id": "watching_the_wave",
+      "displayName": "Watching the Wave, 2017",
+      "imgSrc": "/gallery/Watching the Wave.png",
+      "description": "Acrylic on Canvas.\n\nTwo egrets lingering by the water in anticipation of the slightest ripple."
+    },
+    {
+      "id": "fishing",
+      "displayName": "Fishing, 2016",
+      "imgSrc": "/gallery/Fishing.jpg",
+      "description": "Dye, Ink and Watercolour.\n\nFishing for the last berries before the winter hits. Inspired by the vocalists of Sunnybrook Park."
+    },
+    {
+      "id": "meung",
+      "displayName": "Meung, 2010",
+      "imgSrc": "/gallery/Meung.jpg",
+      "description": "Modern Batik.\n\nInspired by various fantasy games that I grew up with; this piece was created during the \"2010 Modern Batik Art Workshop RISE UP!\"."
+    },
+    {
+      "id": "reflecting_on_the_blue",
+      "displayName": "Reflecting by the Blue, 2017",
+      "imgSrc": "/gallery/Reflecting on the Blue.png",
+      "description": "Acrylic on Canvas.\n\nAn egret perched on driftwood, staring into the water in solidtude."
+    }
+  ]
+}
