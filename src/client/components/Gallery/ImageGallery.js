@@ -59,8 +59,8 @@ const GridImage = styled(Image)`
 `
 
 const ModalImage = styled(Image)`
-  max-width: 50%;
-  max-height: 60vh;
+  max-width: 70%;
+  max-height: 70vh;
   margin-top: 1em;
 `
 
@@ -68,7 +68,7 @@ const ModalImage = styled(Image)`
 class ImageGallery extends React.Component {
   static modalStyle = {
     content: {
-      padding: `20px ${universal.space} ${universal.space} ${universal.space}`,
+      padding: `${universal.space}`,
       left: `${universal.pad}`,
       right: `${universal.pad}`,
     },
@@ -117,10 +117,10 @@ class ImageGallery extends React.Component {
         <GridImage className='grid-sizer' />
         {childElements}
         <Modal style={ImageGallery.modalStyle} isOpen={this.state.modalOpen} contentLabel='Modal' onRequestClose={this.setModal(false)}>
-          <LargeHeader align='center'>{this.state.displayName}</LargeHeader>
           <MultiColumnContainer align='flex-start'>
             <ModalImage src={this.state.src} />
             <SpacedContainer spacing={`0px 0px ${universal.space} ${universal.space}`}>
+              <LargeHeader>{this.state.displayName}</LargeHeader>
               {this.state.description ? TextFormatter.paragraphizeText(this.state.description) : null}
               <SocialMedia />
               <Button onClick={this.setModal(false)} padding='10px'>Close</Button>

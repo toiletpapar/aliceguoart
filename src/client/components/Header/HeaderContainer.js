@@ -5,7 +5,7 @@ import {
 
 const HeaderContainer = styled(BlockContainer)`
   height: 9vh;
-  padding: ${(props) => props.theme.universalPadding};
+  padding: ${(props) => `0px ${props.theme.pad} 0px 0px`};
   background-color: ${(props) => props.theme.black};
   display: flex;
   align-items: center;

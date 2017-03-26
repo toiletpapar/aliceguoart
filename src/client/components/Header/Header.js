@@ -1,10 +1,11 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import {
   SmallHeader,
-  Column,
-  InlineText,
+  RegularHeader,
   Icon,
+  BlockContainer,
 } from '../BasicComponents/index'
 
 import {
@@ -12,14 +13,18 @@ import {
   HeaderLink,
 } from './index'
 
+const FixedContainer = styled(BlockContainer)`
+  width: ${(props) => props.theme.pad};
+  padding-left: 20px;
+`
+
 const Header = (props) => {
   return (
     <HeaderContainer>
-      <Column size='0'>
-        <InlineText colour='white' fontSize='16px'>Alice</InlineText>
-        <InlineText colour='white' fontSize='16px'>Guo</InlineText>
-        <InlineText colour='white' fontSize='16px'>Art</InlineText>
-      </Column>
+      {/* Improve logo design */}
+      <FixedContainer>
+        <RegularHeader colour='white'>Alice Guo Art</RegularHeader>
+      </FixedContainer>
       <HeaderLink to='/home'>
         <Icon className='fa fa-home' colour='white' />
         <SmallHeader inline colour='white'>Home</SmallHeader>
