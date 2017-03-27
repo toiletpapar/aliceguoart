@@ -28,9 +28,10 @@ const Routes = (props) => {
     <BlockContainer>
       <Route component={Header} />
       <Switch>
-        <Route path='/home' component={Home} />
-        <Route path='/gallery' component={Gallery} />
-        <Route path='/about' component={About} />
+        <Route exact path='/home' component={Home} />
+        <Route exact path='/gallery' component={Gallery} />
+        <Route exact path='/gallery/:artID' component={Gallery} />
+        <Route exact path='/about' component={About} />
         <DefaultRoute />
       </Switch>
     </BlockContainer>

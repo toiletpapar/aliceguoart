@@ -30,7 +30,7 @@
     "react-modal": "^1.7.3",
     "react-redux": "^5.0.2",
     "react-router": "next",
-    "react-router-dom": "next",
+    "react-router-dom": "^4.0.0",
     "react-select": "^1.0.0-rc.3",
     "react-slick": "^0.14.6",
     "recompose": "^0.22.0",

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Masonry from 'react-masonry-component'
+import { Link } from 'react-router-dom'
 
 import universal from '../../styles/universal.json'
 import {TextFormatter} from '../../Utils/index'
@@ -105,11 +106,13 @@ class ImageGallery extends React.Component {
   }
 
   render () {
+    console.log(this.props.open)
+
     const childElements = this.props.srcs.map((src, index) => {
       return (
-        <BlockContainer key={index}>
+        <Link to={`/gallery/${src.id}`} key={index}>
           <GridImage className='grid-item' src={src.imgSrc} onClick={this.setModal(true, src.imgSrc, src.description, src.displayName)} />
-        </BlockContainer>
+        </Link>
       )
     })
 

@@ -77,7 +77,7 @@ const humanize = (text) => {
 // Given some string, creates a list of paragraphs based on delimiter
 const paragraphizeText = (text, delimiter = '\n\n', opts = {}) => {
   return text.split(delimiter).map((textBlock, index) => {
-    return (<Paragraph {...opts.style}>{textBlock}</Paragraph>)
+    return (<Paragraph {...opts.style} key={index}>{textBlock}</Paragraph>)
   })
 }
 

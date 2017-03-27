@@ -13,8 +13,10 @@ const Gallery = (props) => {
     return new ArtContent(galleryPhoto.id, galleryPhoto.imgSrc, galleryPhoto.displayName, galleryPhoto.description)
   })
 
+  console.log(props)
+
   return (
-    <ImageGallery srcs={srcs} />
+    <ImageGallery srcs={srcs} open={props.match.params.artID} />
   )
 }
 
