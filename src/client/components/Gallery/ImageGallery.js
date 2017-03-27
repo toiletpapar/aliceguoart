@@ -79,39 +79,28 @@ class ImageGallery extends React.Component {
     },
   }
 
-  static initialState = {
-    modalOpen: false,
-    artContent: null,
-  }
-
-  constructor (props) {
-    super(props)
-
-    this.state = ImageGallery.initialState
-  }
-
-  componentWillReceiveProps (nextProps) {
-    if (this.props.srcs !== nextProps.srcs) {
-      this.setState(ImageGallery.initialState)
-    }
-  }
-
-  setModal = (open, src, description, displayName) => () => {
-    this.setState({
-      modalOpen: open,
-      src,
-      description,
-      displayName,
-    })
-  }
-
   render () {
-    console.log(this.props.open)
+    const {
+      srcs,
+      openID,
+      onClose,
+    } = this.props
 
-    const childElements = this.props.srcs.map((src, index) => {
+    let modalData = {}
+
+    const childElements = srcs.map((src, index) => {
+      if (src.id === openID) {
+        modalData = {
+          isOpen: true,
+          src: src.imgSrc,
+          displayName: src.displayName,
+          description: src.description,
+        }
+      }
+
       return (
         <Link to={`/gallery/${src.id}`} key={index}>
-          <GridImage className='grid-item' src={src.imgSrc} onClick={this.setModal(true, src.imgSrc, src.description, src.displayName)} />
+          <GridImage className='grid-item' src={src.imgSrc} />
         </Link>
       )
     })
@@ -120,17 +109,17 @@ class ImageGallery extends React.Component {
       <Masonry options={masonryOptions}>
         <GridImage className='grid-sizer' />
         {childElements}
-        <Modal style={ImageGallery.modalStyle} isOpen={this.state.modalOpen} contentLabel='Modal' onRequestClose={this.setModal(false)}>
+        <Modal style={ImageGallery.modalStyle} isOpen={modalData.isOpen} contentLabel='Modal' onRequestClose={onClose}>
           <MultiColumnContainer align='flex-start'>
-            <ModalImage src={this.state.src} />
+            <ModalImage src={modalData.src} />
             <BorderContainer>
               <SpacedContainer spacing={`0px 0px 0px ${universal.space}`}>
-                <LargeHeader margin='0em 0em 1em 0em'>{this.state.displayName}</LargeHeader>
-                {this.state.description ? TextFormatter.paragraphizeText(this.state.description) : null}
+                <LargeHeader margin='0em 0em 1em 0em'>{modalData.displayName}</LargeHeader>
+                {modalData.description ? TextFormatter.paragraphizeText(modalData.description) : null}
                 <BlockContainer>
                   <Column align='flex-end' justify='flex-end'>
                     <SocialMedia spacing='10px 0px' />
-                    <Button onClick={this.setModal(false)} padding='10px'>Close</Button>
+                    <Button onClick={onClose} padding='10px'>Close</Button>
                   </Column>
                 </BlockContainer>
               </SpacedContainer>

@@ -13,10 +13,10 @@ const Gallery = (props) => {
     return new ArtContent(galleryPhoto.id, galleryPhoto.imgSrc, galleryPhoto.displayName, galleryPhoto.description)
   })
 
-  console.log(props)
+  const onClose = () => props.history.push('/gallery')
 
   return (
-    <ImageGallery srcs={srcs} open={props.match.params.artID} />
+    <ImageGallery srcs={srcs} openID={props.match.params.artID} onClose={onClose} />
   )
 }
 
