@@ -25,6 +25,12 @@
       "description": "Ink Drawing\n\nInspired by the red pandas who did not let snow interfere with their journey. Going to the Toronto Zoo during one of the coldest Canadian winter days was not such a bad idea!"
     },
     {
+      "id": "reflecting_on_the_blue",
+      "displayName": "Reflecting by the Blue, 2017",
+      "imgSrc": "/gallery/Reflecting on the Blue.png",
+      "description": "Acrylic on Canvas\n\nAn egret perched on driftwood, staring into the water in solidtude."
+    },
+    {
       "id": "dreamer",
       "displayName": "Dreamer, 2016",
       "imgSrc": "/gallery/Dreamer.png",
@@ -35,6 +41,12 @@
       "displayName": "Hello, 2016",
       "imgSrc": "/gallery/Hello.png",
       "description": "Watercolour\n\nShall we be friends? Stray cat from Jamaica."
+    },
+    {
+      "id": "fishing",
+      "displayName": "Fishing, 2016",
+      "imgSrc": "/gallery/Fishing.jpg",
+      "description": "Dye, Ink and Watercolour\n\nFishing for the last berries before the winter hits. Inspired by the vocalists of Sunnybrook Park."
     },
     {
       "id": "owl",
@@ -55,22 +67,10 @@
       "description": "Acrylic on Canvas\n\nTwo egrets lingering by the water in anticipation of the slightest ripple."
     },
     {
-      "id": "fishing",
-      "displayName": "Fishing, 2016",
-      "imgSrc": "/gallery/Fishing.jpg",
-      "description": "Dye, Ink and Watercolour\n\nFishing for the last berries before the winter hits. Inspired by the vocalists of Sunnybrook Park."
-    },
-    {
       "id": "meung",
       "displayName": "Meung, 2010",
       "imgSrc": "/gallery/Meung.jpg",
       "description": "Modern Batik\n\nInspired by various fantasy games that I grew up with; this piece was created during the \"2010 Modern Batik Art Workshop RISE UP!\"."
-    },
-    {
-      "id": "reflecting_on_the_blue",
-      "displayName": "Reflecting by the Blue, 2017",
-      "imgSrc": "/gallery/Reflecting on the Blue.png",
-      "description": "Acrylic on Canvas\n\nAn egret perched on driftwood, staring into the water in solidtude."
     }
   ]
 }
