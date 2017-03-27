@@ -51,7 +51,7 @@ const About = (props) => {
             </Column>
             <Column margin='0px 0px 0px 25px'>
               <Paragraph>Or connect with us on social media:</Paragraph>
-              <SocialMedia />
+              <SocialMedia spacing='0px' />
             </Column>
           </MultiColumnContainer>
         </SpacedContainer>

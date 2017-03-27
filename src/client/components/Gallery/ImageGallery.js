@@ -11,6 +11,8 @@ import {
   Modal,
   Button,
   MultiColumnContainer,
+  Column,
+  BorderContainer,
   SpacedContainer,
   SocialMedia,
   LargeHeader,
@@ -61,7 +63,6 @@ const GridImage = styled(Image)`
 const ModalImage = styled(Image)`
   max-width: 70%;
   max-height: 70vh;
-  margin-top: 1em;
 `
 
 // Given an array of images, layout and display them
@@ -119,12 +120,18 @@ class ImageGallery extends React.Component {
         <Modal style={ImageGallery.modalStyle} isOpen={this.state.modalOpen} contentLabel='Modal' onRequestClose={this.setModal(false)}>
           <MultiColumnContainer align='flex-start'>
             <ModalImage src={this.state.src} />
-            <SpacedContainer spacing={`0px 0px ${universal.space} ${universal.space}`}>
-              <LargeHeader>{this.state.displayName}</LargeHeader>
-              {this.state.description ? TextFormatter.paragraphizeText(this.state.description) : null}
-              <SocialMedia />
-              <Button onClick={this.setModal(false)} padding='10px'>Close</Button>
-            </SpacedContainer>
+            <BorderContainer>
+              <SpacedContainer spacing={`0px 0px 0px ${universal.space}`}>
+                <LargeHeader margin='0em 0em 1em 0em'>{this.state.displayName}</LargeHeader>
+                {this.state.description ? TextFormatter.paragraphizeText(this.state.description) : null}
+                <BlockContainer>
+                  <Column align='flex-end' justify='flex-end'>
+                    <SocialMedia spacing='10px 0px' />
+                    <Button onClick={this.setModal(false)} padding='10px'>Close</Button>
+                  </Column>
+                </BlockContainer>
+              </SpacedContainer>
+            </BorderContainer>
           </MultiColumnContainer>
         </Modal>
       </Masonry>

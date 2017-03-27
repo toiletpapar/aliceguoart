@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Styling } from '../../../Utils/index'
 
 const BaseHeader = styled('h1')`
-  margin: ${(props) => props.title ? '1em 0em' : '0.5em 0em'};
+  margin: ${(props) => props.title ? '1em 0em' : props.margin ? props.margin : '0.5em 0em'};
   font-weight: ${(props) => props.thin ? props.theme.thinweight : props.theme.thickweight};
   font-family: ${(props) => props.theme.fontfamily};
   text-align: ${(props) => props.align || 'left'};
