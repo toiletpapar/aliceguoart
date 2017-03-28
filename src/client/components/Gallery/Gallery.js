@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router-dom'
 
 import ArtContent from './ArtContent'
 
@@ -20,4 +21,4 @@ const Gallery = (props) => {
   )
 }
 
-export default Gallery
+export default withRouter(Gallery)
