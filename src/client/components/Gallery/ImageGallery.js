@@ -44,7 +44,7 @@ const GridImage = styled(Image)`
   @media screen
     and (min-width: 800px)
     and (max-width: 1199px) {
-      width: 33%;
+      width: 33.3333%;
   };
 
   /* Laptops */
