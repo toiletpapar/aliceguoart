@@ -68,17 +68,6 @@ const ModalImage = styled(Image)`
 
 // Given an array of images, layout and display them
 class ImageGallery extends React.Component {
-  static modalStyle = {
-    content: {
-      padding: `${universal.space}`,
-      left: `${universal.pad}`,
-      right: `${universal.pad}`,
-    },
-    overlay: {
-      backgroundColor: 'rgba(0, 0, 0, 0.4)',
-    },
-  }
-
   render () {
     const {
       srcs,
@@ -109,7 +98,13 @@ class ImageGallery extends React.Component {
       <Masonry options={masonryOptions}>
         <GridImage className='grid-sizer' />
         {childElements}
-        <Modal style={ImageGallery.modalStyle} isOpen={modalData.isOpen} contentLabel='Modal' onRequestClose={onClose}>
+        <Modal
+          className='modal-content'
+          overlayClassName='modal-overlay'
+          isOpen={modalData.isOpen}
+          contentLabel='Modal'
+          onRequestClose={onClose}
+        >
           <MultiColumnContainer align='flex-start'>
             <ModalImage src={modalData.src} />
             <BorderContainer>

@@ -9,6 +9,7 @@ if (process.env.WEBPACK) {
   require('../../bower_components/font-awesome/css/font-awesome.min.css')
   require('./styles/Select.css')
   require('./styles/Slider.css')
+  require('./styles/Modal.css')
 }
 
 // App
