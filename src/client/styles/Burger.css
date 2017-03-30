@@ -23,6 +23,8 @@
 
 /* General sidebar styles */
 .bm-menu {
+  position: absolute;
+  width: 100%;
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
@@ -41,5 +43,5 @@
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.5);
 }

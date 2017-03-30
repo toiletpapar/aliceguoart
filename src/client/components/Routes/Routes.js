@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import { Header } from '../Header/index'
-import { Home } from '../Home/index'
+// import { Home } from '../Home/index'
 import { Gallery } from '../Gallery/index'
 import { About } from '../About/index'
 import {

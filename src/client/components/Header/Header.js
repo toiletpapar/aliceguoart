@@ -21,20 +21,20 @@ const FixedContainer = styled(BlockContainer)`
   width: ${(props) => props.theme.pad};
 `
 
-const SmallScreenContainer = styled(MultiColumnContainer)`
-  @media screen
-    and (min-width: 681px) {
-      display: none;
-    }
-
-  flex: 1;
-`
-
 const MidScreenContainer = styled(MultiColumnContainer)`
   @media screen
     and (max-width: 680px) {
       display: none;
   }
+
+  flex: 1;
+`
+
+const SmallScreenContainer = styled(MultiColumnContainer)`
+  @media screen
+    and (min-width: 681px) {
+      display: none;
+    }
 
   flex: 1;
 `
