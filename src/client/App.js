@@ -10,6 +10,7 @@ if (process.env.WEBPACK) {
   require('./styles/Select.css')
   require('./styles/Slider.css')
   require('./styles/Modal.css')
+  require('./styles/Burger.css')
 }
 
 // App

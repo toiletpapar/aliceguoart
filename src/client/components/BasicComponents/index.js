@@ -13,6 +13,7 @@ import {Table} from './Table/index'
 import {Slider} from './Slider/index'
 import {Highlight} from './Highlight/index'
 import {Modal} from './Modal/index'
+import {DropdownMenu} from './DropdownMenu/index'
 
 export {
   Image,
@@ -59,4 +60,5 @@ export {
   Highlight,
   Modal,
   SocialMedia,
+  DropdownMenu,
 }

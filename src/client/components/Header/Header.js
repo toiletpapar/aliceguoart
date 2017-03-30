@@ -9,6 +9,7 @@ import {
   BlockContainer,
   Column,
   MultiColumnContainer,
+  DropdownMenu,
 } from '../BasicComponents/index'
 
 import {
@@ -20,7 +21,16 @@ const FixedContainer = styled(BlockContainer)`
   width: ${(props) => props.theme.pad};
 `
 
-const LinksContainer = styled(MultiColumnContainer)`
+const SmallScreenContainer = styled(MultiColumnContainer)`
+  @media screen
+    and (min-width: 681px) {
+      display: none;
+    }
+
+  flex: 1;
+`
+
+const MidScreenContainer = styled(MultiColumnContainer)`
   @media screen
     and (max-width: 680px) {
       display: none;
@@ -36,7 +46,7 @@ const Header = (props) => {
       <FixedContainer>
         <RegularHeader colour='white'>Alice Guo Art</RegularHeader>
       </FixedContainer>
-      <LinksContainer justify='center'>
+      <MidScreenContainer justify='center'>
         <HeaderLink first to='/home'>
           <Icon margin='0px 8px 0px 0px' className='fa fa-home' colour='white' />
           <SmallHeader inline colour='white'>Home</SmallHeader>
@@ -52,7 +62,10 @@ const Header = (props) => {
         <Column align='flex-end'>
           <SocialMedia spacing='0px' colour='white' />
         </Column>
-      </LinksContainer>
+      </MidScreenContainer>
+      <SmallScreenContainer align='flex-end'>
+        <DropdownMenu />
+      </SmallScreenContainer>
     </HeaderContainer>
   )
 }
