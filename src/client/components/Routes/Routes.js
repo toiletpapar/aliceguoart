@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import { Header } from '../Header/index'
-// import { Home } from '../Home/index'
+import { Home } from '../Home/index'
 import { Gallery } from '../Gallery/index'
 import { About } from '../About/index'
 import {
@@ -19,7 +19,7 @@ const redirect = (path) => (props) => (
 
 const DefaultRoute = (props) => {
   return (
-    <Route render={redirect('/gallery')} />
+    <Route render={redirect('/home')} />
   )
 }
 
@@ -28,7 +28,7 @@ const Routes = (props) => {
     <BlockContainer>
       <Route component={Header} />
       <Switch>
-        {/* <Route exact path='/home' component={Home} /> */}
+        <Route exact path='/home' component={Home} />
         <Route exact path='/gallery' component={Gallery} />
         <Route exact path='/gallery/:artID' component={Gallery} />
         <Route exact path='/about' component={About} />

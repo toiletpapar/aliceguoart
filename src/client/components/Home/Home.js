@@ -15,13 +15,7 @@ const Home = (props) => {
   return (
     <Slider bgColour='white' height={fullHeight}>
       <BlockContainer>
-        <SlideImage height={fullHeight} src='/home/slides/Snuggling169.png' />
-      </BlockContainer>
-      <BlockContainer>
-        <SlideImage height={fullHeight} src='/home/highlights/cat.jpg' />
-      </BlockContainer>
-      <BlockContainer>
-        <SlideImage height={fullHeight} src='/about/Alice_Profile.jpg' />
+        <SlideImage height={fullHeight} src='/home/slides/WelcomeSlide.jpg' />
       </BlockContainer>
     </Slider>
   )
