@@ -71,6 +71,48 @@
       "displayName": "Meung, 2010",
       "imgSrc": "/gallery/Meung.jpg",
       "description": "Modern Batik\n\nInspired by various fantasy games that I grew up with; this piece was created during the \"2010 Modern Batik Art Workshop RISE UP!\"."
+    },
+    {
+      "id": "golden_autumn_i",
+      "displayName": "Golden Autumn, 2016",
+      "imgSrc": "/gallery/Golden Autumn I.jpg",
+      "description": "Acrylic on Canvas\n\nInspired by the beautiful Algonquin Park and painted during my third time to Paint Lounge!\n\nVisiting Algonquin in the fall has become a family tradition. I want to create a series of pieces that revisit the fragrance of earth and timber, soft ruffles of the dancing autumn leaves, and the beautiful auburn that skirts across the horizon."
+    },
+    {
+      "id": "royal_palm",
+      "displayName": "Royal Palm, 2015",
+      "imgSrc": "/gallery/Royal Palm.png",
+      "description": "Ink Drawing"
+    },
+    {
+      "id": "shells_in_the_blue",
+      "displayName": "Shells in the Blue, 2014",
+      "imgSrc": "/gallery/Shells in the Blue.jpg",
+      "description": "Modern Batik\n\nA Modern Batik piece inspired by my first visit to Cuba!"
+    },
+    {
+      "id": "snow_days",
+      "displayName": "Snow Days",
+      "imgSrc": "/gallery/Snow Days.jpg",
+      "description": "Ink Drawing\n\nHappy Holidays! A winter themed drawing created for secret santa event."
+    },
+    {
+      "id": "peonies_iv",
+      "displayName": "Peonies IV, 2016",
+      "imgSrc": "/gallery/Peonies IV.jpg",
+      "description": "Acrylic on Canvas"
+    },
+    {
+      "id": "golden_autumn_ii",
+      "displayName": "Golden Autumn II, 2016",
+      "imgSrc": "/gallery/Golden Autumn II.jpg",
+      "description": "Acrylic on Canvas\n\nInspired by the beautiful Algonquin Park and painted during my third time to Paint Lounge!\n\nVisiting Algonquin in the fall has become a family tradition. I want to create a series of pieces that revisit the fragrance of earth and timber, soft ruffles of the dancing autumn leaves, and the beautiful auburn that skirts across the horizon."
+    },
+    {
+      "id": "strolling",
+      "displayName": "Strolling, 2016",
+      "imgSrc": "/gallery/Strolling.jpg",
+      "description": "Acrylic on Canvas\n\nA place from imagination."
     }
   ]
 }

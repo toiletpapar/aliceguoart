@@ -26,7 +26,7 @@ const masonryOptions = {
 }
 
 const GridImage = styled(Image)`
-  /*padding: 3px;*/
+  padding: 4px;
 
   /* Tiny Screens */
   @media screen
