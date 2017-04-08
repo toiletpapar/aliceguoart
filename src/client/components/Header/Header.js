@@ -10,6 +10,7 @@ import {
   Column,
   MultiColumnContainer,
   DropdownMenu,
+  SpacedContainer,
 } from '../BasicComponents/index'
 
 import {
@@ -71,7 +72,28 @@ const DropdownHeader = (props) => {
   } = props
 
   return (
-    <SmallHeader inline colour='white' size='24px' {...rest}>{children}</SmallHeader>
+    <SmallHeader inline colour='white' size='24px' margin='0px' {...rest}>{children}</SmallHeader>
+  )
+}
+
+const DropdownMenuItem = (props) => {
+  const {
+    icon,
+    text,
+    ...rest
+  } = props
+
+  return (
+    <SpacedContainer spacing='10px 0px'>
+      <MultiColumnContainer align='flex-start' justify='flex-end' {...rest}>
+        <Column>
+          <DropdownIcon className={icon} />
+        </Column>
+        <Column size={4}>
+          <DropdownHeader>{text}</DropdownHeader>
+        </Column>
+      </MultiColumnContainer>
+    </SpacedContainer>
   )
 }
 
@@ -103,18 +125,13 @@ const Header = (props) => {
         <SocialMedia spacing='0px 20px 0px 0px' colour='white' />
         <DropdownMenu>
           <DropdownLink to='/home'>
-            <MultiColumnContainer align='flex-start'>
-              <DropdownIcon className='fa fa-home' />
-              <DropdownHeader>Home</DropdownHeader>
-            </MultiColumnContainer>
+            <DropdownMenuItem text='Home' icon='fa fa-home' />
           </DropdownLink>
           <DropdownLink to='/gallery'>
-            <DropdownIcon className='fa fa-paint-brush' />
-            <DropdownHeader>Gallery</DropdownHeader>
+            <DropdownMenuItem text='Gallery' icon='fa fa-paint-brush' />
           </DropdownLink>
           <DropdownLink to='/about'>
-            <DropdownIcon className='fa fa-child' />
-            <DropdownHeader>About Us</DropdownHeader>
+            <DropdownMenuItem text='About Us' icon='fa fa-child' />
           </DropdownLink>
         </DropdownMenu>
       </SmallScreenContainer>
