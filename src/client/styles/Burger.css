@@ -21,6 +21,11 @@
   background: #bdc3c7;
 }
 
+.bm-cross-button {
+  right: unset;
+  left: 8px;
+}
+
 /* General sidebar styles */
 .bm-menu {
   position: absolute;
@@ -28,6 +33,12 @@
   background: #373a47;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
+}
+
+.bm-overlay, .bm-menu-wrap {
+  top: 0px;
+  right: unset;
+  left: 0px;
 }
 
 /* Morph shape necessary with bubble or elastic */

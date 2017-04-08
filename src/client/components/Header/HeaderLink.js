@@ -7,17 +7,18 @@ const StyledHeaderLink = styled(Link)`
 `
 
 const StyledHeaderContainer = styled('div')`
-  padding: ${(props) => props.first ? '0px 20px 0px 0px' : '0px 20px'};
+  padding: ${(props) => props.margin ? props.margin : props.first ? '0px 20px 0px 0px' : '0px 20px'};
 `
 
 const HeaderLink = (props) => {
   const {
     first,
+    margin,
     ...rest
   } = {...props}
 
   return (
-    <StyledHeaderContainer first={first}>
+    <StyledHeaderContainer first={first} margin={margin}>
       <StyledHeaderLink {...rest}>
         {props.children}
       </StyledHeaderLink>
