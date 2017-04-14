@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Masonry from 'react-masonry-component'
-import { Link } from 'react-router-dom'
 
 import universal from '../../styles/universal.json'
 import {TextFormatter} from '../../Utils/index'
@@ -17,53 +15,17 @@ import {
   SpacedContainer,
   SocialMedia,
   LargeHeader,
+  Masonry,
 } from '../BasicComponents/index'
-
-const masonryOptions = {
-  columnWidth: '.grid-sizer',
-  itemSelector: '.grid-item',
-  percentPosition: true,
-}
-
-const GridImage = styled(Image)`
-  padding: 4px;
-
-  /* Tiny Screens */
-  @media screen
-    and (max-width: 550px) {
-      width: 100%;
-  };
-
-  /* Min sized windows */
-  @media screen
-    and (min-width: 551px)
-    and (max-width: 799px) {
-      width: 50%;
-  };
-
-  @media screen
-    and (min-width: 800px)
-    and (max-width: 1199px) {
-      width: 33.3333%;
-  };
-
-  /* Laptops */
-  @media screen
-    and (min-width: 1200px)
-    and (max-width: 1600px) {
-      width: 25%;
-  };
-
-  /* Large Screens */
-  @media screen
-    and (min-width: 1601px) {
-      width: 20%;
-  };
-`
 
 const ModalImage = styled(Image)`
   max-width: 70%;
   max-height: 70vh;
+`
+
+const GridImage = styled(Image)`
+  padding: 4px;
+  width: 100%;
 `
 
 // Given an array of images, layout and display them
@@ -76,6 +38,7 @@ class ImageGallery extends React.Component {
     } = this.props
 
     let modalData = {}
+    let links = []
 
     const childElements = srcs.map((src, index) => {
       if (src.id === openID) {
@@ -87,17 +50,18 @@ class ImageGallery extends React.Component {
         }
       }
 
+      links = [...links, `/gallery/${src.id}`]
+
       return (
-        <Link to={`/gallery/${src.id}`} key={index}>
-          <GridImage className='grid-item' src={src.imgSrc} />
-        </Link>
+        <GridImage src={src.imgSrc} key={index} />
       )
     })
 
     return (
-      <Masonry options={masonryOptions}>
-        <GridImage className='grid-sizer' />
-        {childElements}
+      <BlockContainer>
+        <Masonry links={links}>
+          {childElements}
+        </Masonry>
         <Modal
           className='modal-content'
           overlayClassName='modal-overlay'
@@ -121,7 +85,7 @@ class ImageGallery extends React.Component {
             </BorderContainer>
           </MultiColumnContainer>
         </Modal>
-      </Masonry>
+      </BlockContainer>
     )
   }
 }

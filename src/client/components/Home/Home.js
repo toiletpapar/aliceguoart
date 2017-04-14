@@ -1,13 +1,12 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 import {
   SlideImage,
 } from './index'
 
 import {
   Slider,
+  Link,
 } from '../BasicComponents/index'
 
 const fullHeight = '91vh'

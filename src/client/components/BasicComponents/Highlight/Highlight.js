@@ -9,13 +9,19 @@ import {
 } from '../index'
 
 const Highlight = (props) => {
+  const {
+    src = '',
+    title,
+    content,
+  } = props
+
   return (
     <HighlightContainer>
-      <HighlightImage src={props.src} />
+      {src ? <HighlightImage src={src} /> : null}
       <HighlightContent>
-        <RegularHeader>{props.title}</RegularHeader>
+        <RegularHeader>{title}</RegularHeader>
         <Paragraph>
-          {props.content}
+          {content}
         </Paragraph>
         <Button padding='5px 10px'>Read More</Button>
       </HighlightContent>

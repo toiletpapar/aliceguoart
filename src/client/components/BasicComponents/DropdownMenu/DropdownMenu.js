@@ -5,9 +5,9 @@ import {slide as Menu} from 'react-burger-menu'
 const DropdownMenu = (props) => {
   // We have to wrap children in native div for radium
   const _wrapChildren = (children) => {
-    return children.map((child) => {
+    return children.map((child, index) => {
       return (
-        <div>
+        <div key={children}>
           {child}
         </div>
       )

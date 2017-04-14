@@ -11,6 +11,7 @@ if (process.env.WEBPACK) {
   require('./styles/Slider.css')
   require('./styles/Modal.css')
   require('./styles/Burger.css')
+  require('./styles/Masonry.css')
 }
 
 // App

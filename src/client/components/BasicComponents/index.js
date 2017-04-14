@@ -1,10 +1,9 @@
 import Image from './Image'
 import SocialMedia from './SocialMedia'
 
-import {Icon, IconAnchor} from './Icon'
+import {Icon} from './Icon'
 import {ColourBox} from './ColourBox/index'
 import {Button, Checkbox, Form, Label, Radio, RadioGroup, RadioContainer, Select, TextInput} from './Inputs/index'
-import {PictureLink} from './PictureLink/index'
 import {BlockContainer, InlineContainer, MultiColumnContainer, SpacedContainer, BorderContainer, Card, Column, MainContainer, ViewPortContainer} from './Containers/index'
 import {SmallHeader, RegularHeader, LargeHeader, InlineText, Paragraph, Anchor} from './Text/index'
 import {Sidebar} from './Sidebar/index'
@@ -14,11 +13,13 @@ import {Slider} from './Slider/index'
 import {Highlight} from './Highlight/index'
 import {Modal} from './Modal/index'
 import {DropdownMenu} from './DropdownMenu/index'
+import {BlogPost} from './BlogPost/index'
+import {Masonry} from './Masonry/index'
+import {Link, PictureLink, ExternalLink} from './Links/index'
 
 export {
   Image,
   Icon,
-  IconAnchor,
 
   /* Containers */
   InlineContainer,
@@ -30,6 +31,7 @@ export {
   SpacedContainer,
   MainContainer,
   ViewPortContainer,
+  Masonry,
 
   /* Inputs */
   Button,
@@ -61,4 +63,7 @@ export {
   Modal,
   SocialMedia,
   DropdownMenu,
+  BlogPost,
+  Link,
+  ExternalLink,
 }
