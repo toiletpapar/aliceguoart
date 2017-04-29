@@ -16,17 +16,18 @@ const Link = (props) => {
     to,
     className,
     children,
+    ...rest
   } = props
 
   if (to) {
     return (
-      <StyledLink to={to} className={className}>
+      <StyledLink to={to} className={className} {...rest}>
         {children}
       </StyledLink>
     )
   } else {
     return (
-      <BlockContainer className={className}>
+      <BlockContainer className={className} {...rest}>
         {children}
       </BlockContainer>
     )
