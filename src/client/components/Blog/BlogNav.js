@@ -2,6 +2,7 @@ import React from 'react'
 
 import universal from '../../styles/universal.json'
 import blogData from '../../data/blogs.json'
+import popularBlogIDs from '../../data/blogsPopular.json'
 
 import {
   Highlight,
@@ -43,11 +44,24 @@ const BlogNav = (props) => {
       <MultiColumnContainer>
         <LeftColumn>
           <LargeHeader title>Recent Blogs</LargeHeader>
-          <Highlight to='/blog/blog_id1' first title='Alice Guo Art Launch' src='/blog/cat.jpg' content='See our amazing gallery by our most wonderful artist' />
+          {Object.keys(blogData).map((key) => {
+            const data = blogData[key]
+            return (
+              <Highlight to={`/blog/${key}`} first title={data.title} src={data.imgSrc} content={data.snippetText} />
+            )
+          })}
         </LeftColumn>
         <RightColumn>
           <LargeHeader title>Popular</LargeHeader>
-          <Highlight to='/blog/blog_id1' mini first title='Blog 2' src='/blog/cat.jpg' content='Blog Content 2' />
+          {
+            popularBlogIDs.map((id) => {
+              const data = blogData[id]
+
+              return (
+                <Highlight mini to={`/blog/${id}`} first title={data.title} src={data.imgSrc} />
+              )
+            })
+          }
         </RightColumn>
       </MultiColumnContainer>
     </MainContainer>

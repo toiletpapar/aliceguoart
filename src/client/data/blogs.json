@@ -1,7 +1,8 @@
 {
   "blog_id1": {
-    "title": "My First Blog Post",
+    "title": "Alice Guo Art Launch",
     "text": "Some text to test out the blog post.\n\nHere we will feature a variety of new art, techniques, and other mentionables with respect to our website. We hope you enjoy your stay and thank you so much for your support!",
+    "snippetText": "See our amazing gallery by our most wonderful artist",
     "timestamp": 1234567890123,
     "imgSrc": "/blog/cat.jpg"
   }
