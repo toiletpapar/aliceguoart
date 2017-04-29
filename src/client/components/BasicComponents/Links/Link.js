@@ -9,6 +9,7 @@ import {
 const StyledLink = styled(RouterLink)`
   text-decoration: none;
   outline: none;
+  color: ${(props) => props.theme.black}
 `
 
 const Link = (props) => {

@@ -4,8 +4,10 @@ import { HighlightContainer, HighlightImage, HighlightContent } from './index'
 
 import {
   RegularHeader,
+  LargeHeader,
   Paragraph,
   Button,
+  Link,
 } from '../index'
 
 const Highlight = (props) => {
@@ -13,17 +15,35 @@ const Highlight = (props) => {
     src = '',
     title,
     content,
+    to,
+    mini = false,
+    first = false,
   } = props
 
-  return (
-    <HighlightContainer>
+  return mini
+  ? (
+    <Link to={to}>
+      <HighlightContainer mini={mini} first={first}>
+        {src ? <HighlightImage src={src} roundCorners /> : null}
+        <HighlightContent>
+          <RegularHeader>{title}</RegularHeader>
+        </HighlightContent>
+      </HighlightContainer>
+    </Link>
+  )
+  : (
+    <HighlightContainer mini={mini} first={first}>
+      <HighlightContent>
+        <LargeHeader>{title}</LargeHeader>
+      </HighlightContent>
       {src ? <HighlightImage src={src} /> : null}
       <HighlightContent>
-        <RegularHeader>{title}</RegularHeader>
         <Paragraph>
           {content}
         </Paragraph>
-        <Button padding='5px 10px'>Read More</Button>
+        <Link to={to}>
+          <Button padding='5px 10px'>Read More</Button>
+        </Link>
       </HighlightContent>
     </HighlightContainer>
   )

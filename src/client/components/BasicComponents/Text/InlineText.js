@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Styling } from '../../../Utils/index'
 
 const InlineText = styled('span')`
-  color: ${(props) => Styling.matchColour(props.theme, props.colour)};
+  color: ${(props) => props.colour ? Styling.matchColour(props.theme, props.colour) : props.theme.black};
   overflow: hidden;
   white-space: ${(props) => props.whiteSpace || 'nowrap'};
   text-overflow: ${(props) => props.textOverflow || 'ellipsis'};

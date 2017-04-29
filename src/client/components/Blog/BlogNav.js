@@ -8,6 +8,7 @@ import {
   MainContainer,
   MultiColumnContainer,
   Column,
+  LargeHeader,
 } from '../BasicComponents/index'
 
 const LeftColumn = (props) => {
@@ -17,7 +18,7 @@ const LeftColumn = (props) => {
   } = props
 
   return (
-    <Column margin={`0px ${universal.space} 0px 0px`} {...rest}>
+    <Column margin={`0px ${universal.space} 0px 0px`} size={3} {...rest}>
       {children}
     </Column>
   )
@@ -30,7 +31,7 @@ const RightColumn = (props) => {
   } = props
 
   return (
-    <Column margin={`0px 0px 0px ${universal.space}`} {...rest} >
+    <Column margin={`0px 0px 0px ${universal.space}`} size={1} {...rest} >
       {children}
     </Column>
   )
@@ -41,15 +42,13 @@ const BlogNav = (props) => {
     <MainContainer>
       <MultiColumnContainer>
         <LeftColumn>
-          <Highlight title='Alice Guo Art Launch' src='/blog/cat.jpg' content='See our amazing gallery by our most wonderful artist' />
+          <LargeHeader title>Recent Blogs</LargeHeader>
+          <Highlight to='/blog/blog_id1' first title='Alice Guo Art Launch' src='/blog/cat.jpg' content='See our amazing gallery by our most wonderful artist' />
         </LeftColumn>
         <RightColumn>
-          <Highlight title='Blog 2' src='' content='Blog Content 2' />
+          <LargeHeader title>Popular</LargeHeader>
+          <Highlight to='/blog/blog_id1' mini first title='Blog 2' src='/blog/cat.jpg' content='Blog Content 2' />
         </RightColumn>
-      </MultiColumnContainer>
-      <MultiColumnContainer>
-        <Highlight title='Blog 3' src='' content='Blog Content 3' />
-        <Highlight title='Blog 4' src='' content='Blog Content 4' />
       </MultiColumnContainer>
     </MainContainer>
   )
