@@ -4,7 +4,7 @@ import SocialMedia from './SocialMedia'
 import {Icon} from './Icon'
 import {ColourBox} from './ColourBox/index'
 import {Button, Checkbox, Form, Label, Radio, RadioGroup, RadioContainer, Select, TextInput} from './Inputs/index'
-import {BlockContainer, InlineContainer, MultiColumnContainer, SpacedContainer, BorderContainer, Card, Column, MainContainer, ViewPortContainer} from './Containers/index'
+import {BlockContainer, InlineContainer, MultiColumnContainer, SpacedContainer, BorderContainer, Card, Column, MainContainer, ViewPortContainer, HiddenContainer} from './Containers/index'
 import {SmallHeader, RegularHeader, LargeHeader, InlineText, Paragraph, Anchor} from './Text/index'
 import {Sidebar} from './Sidebar/index'
 import {NavBar} from './NavBar/index'
@@ -32,6 +32,7 @@ export {
   MainContainer,
   ViewPortContainer,
   Masonry,
+  HiddenContainer,
 
   /* Inputs */
   Button,

@@ -5,6 +5,8 @@ const MultiColumnContainer = styled('div')`
   flex-direction: row;
   justify-content: ${(props) => props.align || 'space-around'};
   align-items: ${(props) => props.justify || 'flex-start'};
+  flex: ${(props) => props.size ? props.size : 0};
+  padding: ${(props) => props.padding || '0px'};
 `
 
 const Column = styled('div')`
@@ -14,6 +16,7 @@ const Column = styled('div')`
   align-items: ${(props) => props.align || 'flex-start'};
   flex: ${(props) => props.size || props.size === 0 ? props.size : 1};
   margin: ${(props) => props.margin || '0px'};
+  padding: ${(props) => props.padding || '0px'};
   ${(props) => props.widthExpand ? 'width: 100%;' : ''}
 `
 

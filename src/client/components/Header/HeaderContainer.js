@@ -12,7 +12,7 @@ const HeaderContainer = styled(BlockContainer)`
 
   @media screen
     and (max-width: 1199px) {
-      padding: ${(props) => `0px 20px`};
+      padding: ${(props) => '0px 20px'};
   };
 
   @media screen

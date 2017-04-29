@@ -24,7 +24,7 @@ const FixedContainer = styled(BlockContainer)`
 
 const MidScreenContainer = styled(MultiColumnContainer)`
   @media screen
-    and (max-width: 680px) {
+    and (max-width: 790px) {
       display: none;
   }
 
@@ -33,7 +33,7 @@ const MidScreenContainer = styled(MultiColumnContainer)`
 
 const SmallScreenContainer = styled(MultiColumnContainer)`
   @media screen
-    and (min-width: 681px) {
+    and (min-width: 791px) {
       display: none;
     }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import universal from '../../styles/universal.json'
 import blogData from '../../data/blogs.json'
@@ -10,6 +11,7 @@ import {
   MultiColumnContainer,
   Column,
   LargeHeader,
+  BlockContainer,
 } from '../BasicComponents/index'
 
 const LeftColumn = (props) => {
@@ -19,7 +21,7 @@ const LeftColumn = (props) => {
   } = props
 
   return (
-    <Column margin={`0px ${universal.space} 0px 0px`} size={3} {...rest}>
+    <Column align='stretch' size={1} {...rest}>
       {children}
     </Column>
   )
@@ -32,11 +34,40 @@ const RightColumn = (props) => {
   } = props
 
   return (
-    <Column margin={`0px 0px 0px ${universal.space}`} size={1} {...rest} >
+    <Column size={0} {...rest} >
       {children}
     </Column>
   )
 }
+
+const getPopularContent = () => {
+  return popularBlogIDs.map((id) => {
+    const data = blogData[id]
+
+    return (
+      <Highlight mini to={`/blog/${id}`} key={id} first title={data.title} src={data.imgSrc} />
+    )
+  })
+}
+
+const MidScreenContainer = styled(BlockContainer)`
+  @media screen
+    and (min-width: 681px) {
+      padding-left: 80px;
+  }
+
+  @media screen
+    and (max-width: 680px) {
+      display: none;
+  }
+`
+
+const SmallScreenContainer = styled(BlockContainer)`
+  @media screen
+    and (min-width: 681px) {
+      display: none;
+  }
+`
 
 const BlogNav = (props) => {
   return (
@@ -47,23 +78,23 @@ const BlogNav = (props) => {
           {Object.keys(blogData).map((key) => {
             const data = blogData[key]
             return (
-              <Highlight to={`/blog/${key}`} first title={data.title} src={data.imgSrc} content={data.snippetText} />
+              <Highlight to={`/blog/${key}`} key={key} first title={data.title} src={data.imgSrc} content={data.snippetText} />
             )
           })}
         </LeftColumn>
         <RightColumn>
-          <LargeHeader title>Popular</LargeHeader>
-          {
-            popularBlogIDs.map((id) => {
-              const data = blogData[id]
-
-              return (
-                <Highlight mini to={`/blog/${id}`} first title={data.title} src={data.imgSrc} />
-              )
-            })
-          }
+          <MidScreenContainer>
+            <LargeHeader key='title' title>Popular</LargeHeader>
+            {getPopularContent()}
+          </MidScreenContainer>
         </RightColumn>
       </MultiColumnContainer>
+      <SmallScreenContainer>
+        <LargeHeader key='title' title>Popular</LargeHeader>
+        <MultiColumnContainer>
+          {getPopularContent()}
+        </MultiColumnContainer>
+      </SmallScreenContainer>
     </MainContainer>
   )
 }

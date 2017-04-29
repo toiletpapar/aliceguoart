@@ -26,7 +26,7 @@ const Highlight = (props) => {
       <HighlightContainer mini={mini} first={first}>
         {src ? <HighlightImage src={src} roundCorners /> : null}
         <HighlightContent>
-          <RegularHeader>{title}</RegularHeader>
+          <RegularHeader whiteSpace='normal' align='center'>{title}</RegularHeader>
         </HighlightContent>
       </HighlightContainer>
     </Link>
@@ -36,7 +36,7 @@ const Highlight = (props) => {
       <HighlightContent>
         <LargeHeader>{title}</LargeHeader>
       </HighlightContent>
-      {src ? <HighlightImage src={src} /> : null}
+      {src ? <HighlightImage center src={src} /> : null}
       <HighlightContent>
         <Paragraph>
           {content}

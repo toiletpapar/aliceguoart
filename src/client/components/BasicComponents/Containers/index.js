@@ -6,6 +6,7 @@ import {MultiColumnContainer, Column} from './MultiColumnContainer'
 import Card from './Card'
 import MainContainer from './MainContainer'
 import ViewPortContainer from './ViewPortContainer'
+import HiddenContainer from './HiddenContainer'
 
 export {
   BlockContainer,
@@ -17,4 +18,5 @@ export {
   Card,
   MainContainer,
   ViewPortContainer,
+  HiddenContainer,
 }
