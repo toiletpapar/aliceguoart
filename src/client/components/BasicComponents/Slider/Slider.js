@@ -1,7 +1,6 @@
 import React from 'react'
 
 import SlickSlider from 'react-slick'
-import { ViewPortContainer } from '../index'
 
 const defaults = {
   dots: true,
@@ -20,7 +19,6 @@ const defaults = {
 const Slider = (props) => {
   // Pull relevant props for Slider wrapper
   const {
-    bgColour,
     children,
   } = props
 
@@ -28,7 +26,6 @@ const Slider = (props) => {
 
   delete newProps.className
   delete newProps.children
-  delete newProps.colour
 
   // Pass all other relevant props on
   const settings = {
@@ -37,11 +34,9 @@ const Slider = (props) => {
   }
 
   return (
-    <ViewPortContainer colour={bgColour} {...settings}>
-      <SlickSlider {...settings}>
-        {children}
-      </SlickSlider>
-    </ViewPortContainer>
+    <SlickSlider {...settings}>
+      {children}
+    </SlickSlider>
   )
 }
 

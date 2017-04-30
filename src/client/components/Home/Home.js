@@ -7,17 +7,20 @@ import {
 import {
   Slider,
   Link,
+  ViewPortContainer,
 } from '../BasicComponents/index'
 
 const fullHeight = '91vh'
 
 const Home = (props) => {
   return (
-    <Slider bgColour='white' height={fullHeight}>
-      <Link to='/gallery'>
-        <SlideImage height={fullHeight} src='/home/slides/WelcomeSlide.jpg' />
-      </Link>
-    </Slider>
+    <ViewPortContainer colour='white' height={fullHeight}>
+      <Slider>
+        <Link to='/gallery'>
+          <SlideImage height={fullHeight} src='/home/slides/WelcomeSlide.jpg' />
+        </Link>
+      </Slider>
+    </ViewPortContainer>
   )
 }
 

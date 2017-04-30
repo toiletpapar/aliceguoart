@@ -32,8 +32,8 @@ const Routes = (props) => {
         <Route exact path='/home' component={Home} />
         <Route exact path='/gallery' component={Gallery} />
         <Route exact path='/gallery/:artID' component={Gallery} />
-        <Route exact path='/blog' component={BlogNav} />
-        <Route exact path='/blog/:blogID' component={Blog} />
+        {/* <Route exact path='/blog' component={BlogNav} />
+        <Route exact path='/blog/:blogID' component={Blog} /> */}
         <Route exact path='/about' component={About} />
         <DefaultRoute />
       </Switch>
