@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 import {
   FreeImage,
@@ -14,7 +15,22 @@ import {
   MultiColumnContainer,
   Anchor,
   SocialMedia,
+  Image,
 } from '../BasicComponents/index'
+
+const MidScreenContainer = styled(BlockContainer)`
+  @media screen
+    and (max-width: 580px) {
+      display: none;
+  }
+`
+
+const SmallScreenContainer = styled(BlockContainer)`
+  @media screen
+    and (min-width: 581px) {
+      display: none;
+  }
+`
 
 const About = (props) => {
   return (
@@ -26,7 +42,12 @@ const About = (props) => {
       </MissionContainer> */}
       <MainContainer>
         <SpacedContainer>
-          <FreeImage src='/about/Alice_Profile.jpg' />
+          <MidScreenContainer>
+            <FreeImage src='/about/Alice_Profile.jpg' />
+          </MidScreenContainer>
+          <SmallScreenContainer>
+            <Image width='100%' src='/about/Alice_Profile.jpg' />
+          </SmallScreenContainer>
           <LargeHeader>About Me</LargeHeader>
           <Paragraph>
             I like to explore nature and to draw inspiration from the wonders of the real world.
@@ -39,21 +60,25 @@ const About = (props) => {
             I started learning to draw at the age of three, and it was so much fun that I continued to do so until I was twelve.
             During my formal training, I practiced sketch, gouache, watercolour, acrylic, oil, and modern batik.
           </Paragraph>
-          {/* <Paragraph>
-            Now I am on a journey to
-          </Paragraph> */}
         </SpacedContainer>
         <SpacedContainer>
           <LargeHeader>Contact Us</LargeHeader>
-          <MultiColumnContainer>
-            <Column margin='0px 25px 0px 0px'>
-              <Paragraph>Have a question or just want to comment? Send us an email to <Anchor href='mailto:alice@aliceguoart.ca' target='_top'>alice@aliceguoart.ca</Anchor>! We'd love to hear from you.</Paragraph>
-            </Column>
-            <Column margin='0px 0px 0px 25px'>
-              <Paragraph>Or connect with us on social media:</Paragraph>
-              <SocialMedia spacing='0px' />
-            </Column>
-          </MultiColumnContainer>
+          <MidScreenContainer>
+            <MultiColumnContainer>
+              <Column margin='0px 25px 0px 0px'>
+                <Paragraph>Have a question or just want to comment? Send us an email to <Anchor href='mailto:alice@aliceguoart.ca' target='_top'>alice@aliceguoart.ca</Anchor>! We'd love to hear from you.</Paragraph>
+              </Column>
+              <Column margin='0px 0px 0px 25px'>
+                <Paragraph>Or connect with us on social media:</Paragraph>
+                <SocialMedia spacing='0px' />
+              </Column>
+            </MultiColumnContainer>
+          </MidScreenContainer>
+          <SmallScreenContainer>
+            <Paragraph>Have a question or just want to comment? Send us an email to <Anchor href='mailto:alice@aliceguoart.ca' target='_top'>alice@aliceguoart.ca</Anchor>! We'd love to hear from you.</Paragraph>
+            <Paragraph>Or connect with us on social media:</Paragraph>
+            <SocialMedia spacing='0px' />
+          </SmallScreenContainer>
         </SpacedContainer>
       </MainContainer>
     </BlockContainer>
