@@ -18,16 +18,18 @@ import {
   Image,
 } from '../BasicComponents/index'
 
+const SCREEN_PARTITION = 580
+
 const MidScreenContainer = styled(BlockContainer)`
   @media screen
-    and (max-width: 580px) {
+    and (max-width: ${SCREEN_PARTITION}px) {
       display: none;
   }
 `
 
 const SmallScreenContainer = styled(BlockContainer)`
   @media screen
-    and (min-width: 581px) {
+    and (min-width: ${SCREEN_PARTITION + 1}px) {
       display: none;
   }
 `

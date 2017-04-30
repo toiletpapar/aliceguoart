@@ -22,9 +22,11 @@ const FixedContainer = styled(BlockContainer)`
   width: ${(props) => props.theme.pad};
 `
 
+const SCREEN_PARTITION = 790
+
 const MidScreenContainer = styled(MultiColumnContainer)`
   @media screen
-    and (max-width: 790px) {
+    and (max-width: ${SCREEN_PARTITION}px) {
       display: none;
   }
 
@@ -33,7 +35,7 @@ const MidScreenContainer = styled(MultiColumnContainer)`
 
 const SmallScreenContainer = styled(MultiColumnContainer)`
   @media screen
-    and (min-width: 791px) {
+    and (min-width: ${SCREEN_PARTITION + 1}px) {
       display: none;
     }
 

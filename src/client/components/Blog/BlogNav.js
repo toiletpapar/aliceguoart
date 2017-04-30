@@ -14,6 +14,8 @@ import {
   BlockContainer,
 } from '../BasicComponents/index'
 
+const SCREEN_PARTITION = 680
+
 const LeftColumn = (props) => {
   const {
     children,
@@ -52,19 +54,19 @@ const getPopularContent = () => {
 
 const MidScreenContainer = styled(BlockContainer)`
   @media screen
-    and (min-width: 681px) {
+    and (min-width: ${SCREEN_PARTITION + 1}px) {
       padding-left: 80px;
   }
 
   @media screen
-    and (max-width: 680px) {
+    and (max-width: ${SCREEN_PARTITION}px) {
       display: none;
   }
 `
 
 const SmallScreenContainer = styled(BlockContainer)`
   @media screen
-    and (min-width: 681px) {
+    and (min-width: ${SCREEN_PARTITION + 1}px) {
       display: none;
   }
 `
