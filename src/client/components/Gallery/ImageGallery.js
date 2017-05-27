@@ -15,7 +15,7 @@ import {
   SpacedContainer,
   SocialMedia,
   LargeHeader,
-  Masonry,
+  MasonryImage,
 } from '../BasicComponents/index'
 
 const SCREEN_PARTITION = 1100
@@ -118,9 +118,9 @@ class ImageGallery extends React.Component {
 
     return (
       <BlockContainer>
-        <Masonry links={links}>
+        <MasonryImage links={links} bulkLoad={1}>
           {childElements}
-        </Masonry>
+        </MasonryImage>
         <DescriptionModal modalData={modalData} onClose={onClose} />
       </BlockContainer>
     )

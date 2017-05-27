@@ -14,7 +14,7 @@ import {Highlight} from './Highlight/index'
 import {Modal} from './Modal/index'
 import {DropdownMenu} from './DropdownMenu/index'
 import {BlogPost} from './BlogPost/index'
-import {Masonry} from './Masonry/index'
+import {MasonryImage} from './Masonry/index'
 import {Link, PictureLink, ExternalLink} from './Links/index'
 
 export {
@@ -31,7 +31,7 @@ export {
   SpacedContainer,
   MainContainer,
   ViewPortContainer,
-  Masonry,
+  MasonryImage,
   HiddenContainer,
 
   /* Inputs */

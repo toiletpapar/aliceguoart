@@ -1,5 +1,5 @@
-import Masonry from './Masonry'
+import MasonryImage from './MasonryImage'
 
 export {
-  Masonry,
+  MasonryImage,
 }
