@@ -1,0 +1,70 @@
+{
+  "galleryData": [
+    {
+      "id": "ear_hugs",
+      "displayName": "Ear Hugs, 2017",
+      "imgSrc": "/greetings/Ear Hugs.jpg",
+      "description": "Ink and Watercolour Original Card"
+    },
+    {
+      "id": "ear_hugs_client",
+      "displayName": "Ear Hugs Delivery, 2017",
+      "imgSrc": "/greetings/Ear Hugs-client.jpg",
+      "description": "Ear hugs!!!\n\nA card for a wonderful mother of two adorable \"bunnies\". Lucy Fan is the angrier bunny. Happy mother's day everyone!"
+    },
+    {
+      "id": "kobe",
+      "displayName": "Kobe, 2017",
+      "imgSrc": "/greetings/Kobe.jpg",
+      "description": "Ink and Watercolour Original Card"
+    },
+    {
+      "id": "kobe_client",
+      "displayName": "Kobe Delivery, 2017",
+      "imgSrc": "/greetings/Kobe-client.jpg",
+      "description": "Happy birthday Yanny!!! Bring back some pineapple cakes from Taiwan!"
+    },
+    {
+      "id": "ricky_the_love_bird",
+      "displayName": "Ricky the Love Bird, 2017",
+      "imgSrc": "/greetings/Ricky the love bird.jpg",
+      "description": "Ink and Watercolour Original Card"
+    },
+    {
+      "id": "ricky_the_love_bird_client",
+      "displayName": "Ricky the Love Bird Delivery, 2017",
+      "imgSrc": "/greetings/Ricky the love bird-client.jpg",
+      "description": "For a special bird loving mother. Tyler Poon is the twig ;). Happy early mother's day!"
+    },
+    {
+      "id": "turtle",
+      "displayName": "Turtle, 2017",
+      "imgSrc": "/greetings/Turtle.jpg",
+      "description": "Ink and Watercolour Original Card"
+    },
+    {
+      "id": "turtle_client",
+      "displayName": "Turtle Delivery, 2017",
+      "imgSrc": "/greetings/Turtle-client.jpg",
+      "description": "A card for my awesome mom in memory of our adventure at Point Pelee!"
+    },
+    {
+      "id": "car_tea",
+      "displayName": "Car Tea, 2017",
+      "imgSrc": "/greetings/Car-Tea.jpg",
+      "description": "Ink and Watercolour Card\n\nMy best attempt to combine tea, car, camera, lipstick XD!"
+    },
+    {
+      "id": "poros",
+      "displayName": "Poros, 2017",
+      "imgSrc": "/greetings/Poros.jpg",
+      "description": "Ink and Watercolour Card\n\nUrgot Poros!!!"
+    },
+    {
+      "id": "snuggling",
+      "displayName": "Snuggling, 2017",
+      "imgSrc": "/greetings/Snuggling.jpg",
+      "description": "Ink and Watercolour Card\n\nInspired by my awesome friend Lucy Fan's bunnies and those good old sleeping parties back in UW."
+    }
+  ]
+}

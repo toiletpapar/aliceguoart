@@ -115,6 +115,10 @@ const Header = (props) => {
           <Icon className='fa fa-paint-brush' colour='white' />
           <SmallHeader inline colour='white'>Gallery</SmallHeader>
         </HeaderLink>
+        <HeaderLink to='/greetings'>
+          <Icon className='fa fa-book' colour='white' />
+          <SmallHeader inline colour='white'>Greetings</SmallHeader>
+        </HeaderLink>
         {/* <HeaderLink to='/blog'>
           <Icon className='fa fa-rss' colour='white' />
           <SmallHeader inline colour='white'>Blog</SmallHeader>
@@ -135,6 +139,9 @@ const Header = (props) => {
           </DropdownLink>
           <DropdownLink to='/gallery'>
             <DropdownMenuItem text='Gallery' icon='fa fa-paint-brush' />
+          </DropdownLink>
+          <DropdownLink to='/greetings'>
+            <DropdownMenuItem text='Greetings' icon='fa fa-book' />
           </DropdownLink>
           {/* <DropdownLink to='/blog'>
             <DropdownMenuItem text='Blog' icon='fa fa-rss' />

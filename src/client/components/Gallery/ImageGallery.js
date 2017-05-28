@@ -94,6 +94,7 @@ class ImageGallery extends React.Component {
       srcs,
       openID,
       onClose,
+      rootID,
     } = this.props
 
     let modalData = {}
@@ -109,7 +110,7 @@ class ImageGallery extends React.Component {
         }
       }
 
-      links = [...links, `/gallery/${src.id}`]
+      links = [...links, `${rootID}/${src.id}`]
 
       return (
         <GridImage src={src.imgSrc} key={index} />

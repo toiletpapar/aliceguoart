@@ -5,7 +5,7 @@ import { Header } from '../Header/index'
 import { Home } from '../Home/index'
 import { Gallery } from '../Gallery/index'
 import { About } from '../About/index'
-import { Blog, BlogNav } from '../Blog/index'
+// import { Blog, BlogNav } from '../Blog/index'
 import {
   BlockContainer,
 } from '../BasicComponents/index'
@@ -30,8 +30,10 @@ const Routes = (props) => {
       <Route component={Header} />
       <Switch>
         <Route exact path='/home' component={Home} />
-        <Route exact path='/gallery' component={Gallery} />
-        <Route exact path='/gallery/:artID' component={Gallery} />
+        <Route exact path='/gallery' component={Gallery('art')} />
+        <Route exact path='/gallery/:imgID' component={Gallery('art')} />
+        <Route exact path='/greetings' component={Gallery('card')} />
+        <Route exact path='/greetings/:imgID' component={Gallery('card')} />
         {/* <Route exact path='/blog' component={BlogNav} />
         <Route exact path='/blog/:blogID' component={Blog} /> */}
         <Route exact path='/about' component={About} />
