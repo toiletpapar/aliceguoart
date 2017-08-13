@@ -65,6 +65,42 @@
       "displayName": "Snuggling, 2017",
       "imgSrc": "/greetings/Snuggling.jpg",
       "description": "Ink and Watercolour Card\n\nInspired by my awesome friend Lucy Fan's bunnies and those good old sleeping parties back in UW."
+    },
+    {
+      "id": "longhairbeauty",
+      "displayName": "Long Hair Beauty, 2017",
+      "imgSrc": "/greetings/Long-haired-beauty.jpg",
+      "description": "Ink Card\n\n!!!"
+    },
+    {
+      "id": "longhairbeauty_client",
+      "displayName": "Long Hair Beauty Delivery, 2017",
+      "imgSrc": "/greetings/Long-haired-beauty-client.jpg",
+      "description": "They have a striking resemblence!!"
+    },
+    {
+      "id": "sahu",
+      "displayName": "SAHU, 2017",
+      "imgSrc": "/greetings/SAHU.jpg",
+      "description": "Ink and Watercolour Card\n\nMy very first robot design! SAHU (short for Secure Animal Housing Unit) is an animal loving robot that takes care of injured animals :)."
+    },
+    {
+      "id": "sahu_client",
+      "displayName": "SAHU Delivery, 2017",
+      "imgSrc": "/greetings/SAHU-client.jpg",
+      "description": "Happy Birthday Andrew!! Here's to another year of friendship :)."
+    },
+    {
+      "id": "dep1",
+      "displayName": "DEP1, 2017",
+      "imgSrc": "/greetings/DEP1.jpg",
+      "description": "Ink and Watercolour Card\n\nA robot design for a durian lover. DEP1 (short for Durian Extraction Processor 1) chops, opens, and cuts durians. The goods are transported to a conveyor belt directly to the boss so they can be enjoyed fresh!"
+    },
+    {
+      "id": "dep1",
+      "displayName": "DEP1 Delivery, 2017",
+      "imgSrc": "/greetings/DEP1-client.jpg",
+      "description": "Just make sure not to stink up my house with your fancy new robot >:P"
     }
   ]
 }

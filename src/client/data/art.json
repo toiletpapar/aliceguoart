@@ -149,6 +149,18 @@
       "displayName": "Welcome, Winged Neighbour, 2016",
       "imgSrc": "/gallery/Welcome, Winged Neighbour.jpg",
       "description": "Ink Drawing\n\nA journey through High Park brought these two friends together."
+    },
+    {
+      "id": "gentle_giants",
+      "displayName": "Gentle Giants, 2017",
+      "imgSrc": "/gallery/Gentle Giants.jpg",
+      "description": "Ink Drawing\n\nA close friend of mine loves Beluga Whales and I was supposed to paint her one years ago - so here is a Beluga family!!"
+    },
+    {
+      "id": "moons_of_the_ocean",
+      "displayName": "Moons of the Ocean, 2017",
+      "imgSrc": "/gallery/Moons of the Ocean.jpg",
+      "description": "Gel Pen, Charcoal, Soft Pastel\n\nInspired by my trip to the Ripley's aquarium and the Toronto Zoo, these ancient creatures glow like the moon."
     }
   ]
 }

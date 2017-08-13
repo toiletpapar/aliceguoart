@@ -20,6 +20,7 @@ const Home = (props) => {
           <SlideImage height={fullHeight} src='/home/slides/WelcomeSlide.jpg' />
         </Link>
       </Slider>
+      {/* <iframe width='560' height='315' src='https://www.youtube.com/embed/c6B3sIBT5Wo' frameBorder='0' allowFullScreen /> */}
     </ViewPortContainer>
   )
 }
