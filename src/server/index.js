@@ -1,6 +1,7 @@
 import express from 'express'
 import chalk from 'chalk'
 import React from 'react'
+import morgan from 'morgan'
 import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
@@ -18,6 +19,7 @@ const nodeEnv = process.env.NODE_ENV || 'development'
 const app = express()
 
 app.use(bodyParser.json())
+app.use(morgan('dev'))
 
 app.set('view engine', 'ejs')
 app.set('views', 'views')
