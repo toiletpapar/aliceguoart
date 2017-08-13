@@ -16,6 +16,8 @@ import {
   SocialMedia,
   LargeHeader,
   MasonryImage,
+  ExternalLink,
+  Paragraph,
 } from '../BasicComponents/index'
 
 const SCREEN_PARTITION = 1100
@@ -54,6 +56,14 @@ const DescriptionModal = (props) => {
     <SpacedContainer spacing={spacing}>
       <LargeHeader margin='0em 0em 1em 0em'>{modalData.displayName}</LargeHeader>
       {modalData.description ? TextFormatter.paragraphizeText(modalData.description) : null}
+      {
+        modalData.youtube
+        ? (
+          <ExternalLink to={modalData.youtube}>
+            <Paragraph colour='blue'>Check out how its made here!</Paragraph>
+          </ExternalLink>
+        ) : null
+      }
       <BlockContainer>
         <Column align='flex-end' justify='flex-end'>
           <SocialMedia spacing='10px 0px' />
@@ -107,6 +117,7 @@ class ImageGallery extends React.Component {
           src: src.imgSrc,
           displayName: src.displayName,
           description: src.description,
+          youtube: src.youtube,
         }
       }
 

@@ -82,7 +82,8 @@
       "id": "sahu",
       "displayName": "SAHU, 2017",
       "imgSrc": "/greetings/SAHU.jpg",
-      "description": "Ink and Gouache Card\n\nMy very first robot design! SAHU (short for Secure Animal Housing Unit) is an animal loving robot that takes care of injured animals :)."
+      "description": "Ink and Gouache Card\n\nMy very first robot design! SAHU (short for Secure Animal Housing Unit) is an animal loving robot that takes care of injured animals :).",
+      "youtube": "https://youtu.be/7rOcjuR9CLk"
     },
     {
       "id": "sahu_client",
@@ -101,6 +102,13 @@
       "displayName": "DEP1 Delivery, 2017",
       "imgSrc": "/greetings/DEP1-client.jpg",
       "description": "Just make sure not to stink up my house with your fancy new robot >:P"
+    },
+    {
+      "id": "ya_ya",
+      "displayName": "Ya Ya, 2017",
+      "imgSrc": "/greetings/Ya_Ya.jpg",
+      "description": "Ink and Watercolour Card\n\nThis simple card was created for a birthday girl nicknamed \"Ya Ya\", which is a homonym with \"ducks\" in Chinese.",
+      "youtube": "https://youtu.be/c6B3sIBT5Wo"
     }
   ]
 }

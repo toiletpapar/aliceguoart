@@ -1,5 +1,5 @@
 class ArtContent {
-  constructor (id, imgSrc, displayName, description, opts) {
+  constructor (id, imgSrc, displayName, description, youtube, opts) {
     if (!id || !imgSrc) {
       throw new Error('Invalid parameters for class ArtContent. Expected id and imgSrc.')
     }
@@ -8,6 +8,7 @@ class ArtContent {
     this.displayName = displayName || ''
     this.imgSrc = imgSrc
     this.description = description || ''
+    this.youtube = youtube || ''
     this.opts = opts || {}
   }
 

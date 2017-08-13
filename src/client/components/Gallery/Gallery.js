@@ -24,7 +24,7 @@ const Gallery = (content) => withRouter((props) => {
   }
 
   const srcs = objMap[content].data.galleryData.map((galleryPhoto) => {
-    return new ArtContent(galleryPhoto.id, galleryPhoto.imgSrc, galleryPhoto.displayName, galleryPhoto.description)
+    return new ArtContent(galleryPhoto.id, galleryPhoto.imgSrc, galleryPhoto.displayName, galleryPhoto.description, galleryPhoto.youtube)
   })
 
   const onClose = () => props.history.push(objMap[content].mainURL)

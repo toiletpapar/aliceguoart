@@ -15,7 +15,7 @@ const ExternalLink = (props) => {
   } = props
 
   return (
-    <StyledExternal href={to} {...rest}>
+    <StyledExternal target='_blank' href={to} {...rest}>
       {props.children}
     </StyledExternal>
   )
