@@ -66,7 +66,7 @@ const DescriptionModal = (props) => {
       }
       <BlockContainer>
         <Column align='flex-end' justify='flex-end'>
-          <SocialMedia spacing='10px 0px' />
+          <SocialMedia spacing='10px 0px' etsyUrl={modalData.etsyUrl} />
           <Button onClick={onClose} padding='10px'>Close</Button>
         </Column>
       </BlockContainer>
@@ -118,6 +118,7 @@ class ImageGallery extends React.Component {
           displayName: src.displayName,
           description: src.description,
           youtube: src.youtube,
+          etsyUrl: src.etsyUrl,
         }
       }
 

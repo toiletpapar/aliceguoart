@@ -1,15 +1,15 @@
 class ArtContent {
-  constructor (id, imgSrc, displayName, description, youtube, opts) {
+  constructor (id, imgSrc, opts = {}) {
     if (!id || !imgSrc) {
       throw new Error('Invalid parameters for class ArtContent. Expected id and imgSrc.')
     }
 
     this.id = id
-    this.displayName = displayName || ''
+    this.displayName = opts.displayName || ''
     this.imgSrc = imgSrc
-    this.description = description || ''
-    this.youtube = youtube || ''
-    this.opts = opts || {}
+    this.description = opts.description || ''
+    this.youtube = opts.youtube || ''
+    this.etsyUrl = opts.etsyUrl || 'https://www.etsy.com/ca/shop/AliceGuoArt?ref=l2-shop-info-avatar'
   }
 
   toObject () {
@@ -18,7 +18,8 @@ class ArtContent {
       displayName: this.displayName,
       imgSrc: this.imgSrc,
       description: this.description,
-      opts: this.opts,
+      youtube: this.youtube,
+      etsyUrl: this.etsyUrl,
     }
   }
 }

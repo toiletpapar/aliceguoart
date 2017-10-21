@@ -9,6 +9,7 @@ import {
 const SocialMedia = (props) => {
   const {
     colour,
+    etsyUrl,
     ...rest
   } = {...props}
 
@@ -22,6 +23,9 @@ const SocialMedia = (props) => {
       </ExternalLink>
       <ExternalLink colour={colour} to='https://www.instagram.com/aliceguoart/?hl=en'>
         <Icon className='fa fa-instagram' />
+      </ExternalLink>
+      <ExternalLink colour={colour} to={etsyUrl}>
+        <Icon className='fa fa-etsy' />
       </ExternalLink>
     </SpacedContainer>
   )
