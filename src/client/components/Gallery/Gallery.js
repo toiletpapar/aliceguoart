@@ -13,19 +13,19 @@ import {
   ImageGallery,
 } from './index'
 
+const objMap = {
+  art: {
+    data: artData,
+    mainURL: '/gallery',
+  },
+  card: {
+    data: cardData,
+    mainURL: '/greetings',
+  },
+}
+
 const Gallery = (content) => withRouter((props) => {
   // Select from the data source based on content param
-  const objMap = {
-    art: {
-      data: artData,
-      mainURL: '/gallery',
-    },
-    card: {
-      data: cardData,
-      mainURL: '/greetings',
-    },
-  }
-
   const srcs = objMap[content].data.galleryData.map((galleryPhoto) => {
     return new ArtContent(galleryPhoto.id, galleryPhoto.imgSrc, { ...galleryPhoto })
   })
