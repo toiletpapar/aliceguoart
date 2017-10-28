@@ -6,7 +6,6 @@ import { renderToString } from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import bodyParser from 'body-parser'
-import * as Promise from 'bluebird'
 import { ServerStyleSheet } from 'styled-components'
 
 import App from '../client/App'
@@ -35,53 +34,44 @@ app.use('/', express.static('./public'))
  *  Server Rendering
  */
 
-const fetchData = (req) => [
-
-]
-
 app.get('*', (req, res) => {
-  return Promise.all(fetchData(req)).then((data) => {
-    // This context object contains the results of the render
-    const context = {}
+  // This context object contains the results of the render
+  const context = {}
 
-    // Compile an initial state
-    let preloadedState = compileInitialState({
+  // Compile an initial state
+  let preloadedState = compileInitialState({
 
-    })
-
-    // Preloaded state to send to the client
-    const store = makeStore(preloadedState)
-
-    const sheet = new ServerStyleSheet()
-    const html = renderToString(sheet.collectStyles(
-      <StaticRouter location={req.url} context={context}>
-        <Provider store={store}>
-          <App />
-        </Provider>
-      </StaticRouter>
-    ))
-    const styleTags = sheet.getStyleTags()
-
-    // Grab the initial state from our Redux store
-    const finalState = store.getState()
-
-    // context.url will contain the URL to redirect to if a <Redirect> was used
-    if (context.url) {
-      res.writeHead(302, {
-        Location: context.url,
-      })
-      return res.end()
-    } else {
-      return res.render('index', {
-        app: html,
-        state: finalState,
-        styles: styleTags
-      })
-    }
-  }).catch((err) => {
-    console.log(err)
-    res.sendStatus(500)
   })
+
+  // Preloaded state to send to the client
+  const store = makeStore(preloadedState)
+
+  const sheet = new ServerStyleSheet()
+  const html = renderToString(sheet.collectStyles(
+    <StaticRouter location={req.url} context={context}>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </StaticRouter>
+  ))
+  const styleTags = sheet.getStyleTags()
+
+  // Grab the initial state from our Redux store
+  const finalState = store.getState()
+
+  // context.url will contain the URL to redirect to if a <Redirect> was used
+  if (context.url) {
+    res.writeHead(302, {
+      Location: context.url,
+    })
+    return res.end()
+  } else {
+    return res.render('index', {
+      app: html,
+      state: finalState,
+      styles: styleTags
+    })
+  }
 })
 
 app.listen(port, host, () => {
