@@ -174,12 +174,9 @@ const Header = (props) => {
             <DropdownMenuItem text='About Us' icon='fa fa-child' />
           </DropdownLink>
           <DropdownLink>
-            <SpacedContainer spacing='10px 0px'>
-              <ExternalLink to='https://www.etsy.com/ca/shop/AliceGuoArt'>
-                <Icon className='fa fa-etsy' colour='white' />
-                <SmallHeader inline colour='white'>Shop</SmallHeader>
-              </ExternalLink>
-            </SpacedContainer>
+            <ExternalLink to='https://www.etsy.com/ca/shop/AliceGuoArt'>
+              <DropdownMenuItem text='Shop' icon='fa fa-etsy' />
+            </ExternalLink>
           </DropdownLink>
         </DropdownMenu>
       </SmallScreenContainer>

@@ -158,7 +158,8 @@
       "id": "welcome_winged_neighbour",
       "displayName": "Welcome, Winged Neighbour, 2016",
       "imgSrc": "/gallery/Welcome, Winged Neighbour.jpg",
-      "description": "Ink Drawing\n\nA journey through High Park brought these two friends together."
+      "description": "Ink Drawing\n\nA journey through High Park brought these two friends together.",
+      "etsyUrl": "https://www.etsy.com/ca/listing/551753142/welcome-winged-neighbour-digital-art"
     },
     {
       "id": "gentle_giants",
@@ -168,10 +169,29 @@
       "youtube": "https://youtu.be/ZyfoaTHI-SU"
     },
     {
+      "id": "moons_of_the_ocean_ii",
+      "displayName": "Moons of the Ocean, 2017",
+      "imgSrc": "/gallery/Moons of the Ocean II.jpg",
+      "description": "Gel Pen, Charcoal, Soft Pastel\n\nInspired by my trip to the Ripley's aquarium and the Toronto Zoo, these ancient creatures glow like the moon."
+    },
+    {
       "id": "moons_of_the_ocean",
       "displayName": "Moons of the Ocean, 2017",
       "imgSrc": "/gallery/Moons of the Ocean.jpg",
       "description": "Gel Pen, Charcoal, Soft Pastel\n\nInspired by my trip to the Ripley's aquarium and the Toronto Zoo, these ancient creatures glow like the moon."
+    },
+    {
+      "id": "depi",
+      "displayName": "DEPI, 2017",
+      "imgSrc": "/gallery/DEPI.jpg",
+      "description": "A robot design for a durian lover. DEP1 (Durian Extraction Processor 1) chops, opens and cuts durians. The goods are transported to on a conveyor belt directly to TP bossman to be enjoyed immediately."
+    },
+    {
+      "id": "stop_poking_me",
+      "displayName": "Stop Poking Me!, 2017",
+      "imgSrc": "/gallery/Stop Poking Me.jpg",
+      "description": "Ever wondered how cacti felt living next to each other? Well here's my take on it!",
+      "etsyUrl": "https://www.etsy.com/ca/listing/551748102/stop-poking-me-digital-art-print"
     }
   ]
 }
