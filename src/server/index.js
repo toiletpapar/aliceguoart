@@ -7,6 +7,7 @@ import { StaticRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import bodyParser from 'body-parser'
 import * as Promise from 'bluebird'
+import { ServerStyleSheet } from 'styled-components'
 
 import App from '../client/App'
 import makeStore from '../client/store'
@@ -51,13 +52,15 @@ app.get('*', (req, res) => {
     // Preloaded state to send to the client
     const store = makeStore(preloadedState)
 
-    const html = renderToString(
+    const sheet = new ServerStyleSheet()
+    const html = renderToString(sheet.collectStyles(
       <StaticRouter location={req.url} context={context}>
         <Provider store={store}>
           <App />
         </Provider>
       </StaticRouter>
-    )
+    ))
+    const styleTags = sheet.getStyleTags()
 
     // Grab the initial state from our Redux store
     const finalState = store.getState()
@@ -72,6 +75,7 @@ app.get('*', (req, res) => {
       return res.render('index', {
         app: html,
         state: finalState,
+        styles: styleTags
       })
     }
   }).catch((err) => {
