@@ -9,7 +9,7 @@ class ArtContent {
     this.imgSrc = imgSrc
     this.description = opts.description || ''
     this.youtube = opts.youtube || ''
-    this.etsyUrl = opts.etsyUrl || 'https://www.etsy.com/ca/shop/AliceGuoArt?ref=l2-shop-info-avatar'
+    this.etsyUrl = opts.etsyUrl || ''
   }
 
   toObject () {

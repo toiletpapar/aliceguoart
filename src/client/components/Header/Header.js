@@ -4,13 +4,15 @@ import styled from 'styled-components'
 import {
   SmallHeader,
   RegularHeader,
-  SocialMedia,
+  BrandBar,
+  defaultBrands,
   Icon,
   BlockContainer,
   Column,
   MultiColumnContainer,
   DropdownMenu,
   SpacedContainer,
+  ExternalLink,
 } from '../BasicComponents/index'
 
 import {
@@ -41,6 +43,22 @@ const SmallScreenContainer = styled(MultiColumnContainer)`
 
   flex: 1;
 `
+
+const customBrands = defaultBrands.reduce((brands, brand) => {
+  if (brand.brand === 'etsy') {
+    // remove etsy
+    return brands
+  }
+
+  // make the brand white
+  return [
+    ...brands,
+    {
+      ...brand,
+      colour: 'white',
+    },
+  ]
+}, [])
 
 const DropdownLink = (props) => {
   const {
@@ -127,12 +145,18 @@ const Header = (props) => {
           <Icon className='fa fa-child' colour='white' />
           <SmallHeader inline colour='white'>About Us</SmallHeader>
         </HeaderLink>
+        <HeaderLink>
+          <ExternalLink to='https://www.etsy.com/ca/shop/AliceGuoArt'>
+            <Icon className='fa fa-etsy' colour='white' />
+            <SmallHeader inline colour='white'>Shop</SmallHeader>
+          </ExternalLink>
+        </HeaderLink>
         <Column align='flex-end'>
-          <SocialMedia spacing='0px' colour='white' />
+          <BrandBar spacing='0px' brands={customBrands} />
         </Column>
       </MidScreenContainer>
       <SmallScreenContainer align='flex-end'>
-        <SocialMedia spacing='0px 20px 0px 0px' colour='white' />
+        <BrandBar spacing='0px 20px 0px 0px' brands={customBrands} />
         <DropdownMenu>
           <DropdownLink to='/home'>
             <DropdownMenuItem text='Home' icon='fa fa-home' />
@@ -148,6 +172,14 @@ const Header = (props) => {
           </DropdownLink> */}
           <DropdownLink to='/about'>
             <DropdownMenuItem text='About Us' icon='fa fa-child' />
+          </DropdownLink>
+          <DropdownLink>
+            <SpacedContainer spacing='10px 0px'>
+              <ExternalLink to='https://www.etsy.com/ca/shop/AliceGuoArt'>
+                <Icon className='fa fa-etsy' colour='white' />
+                <SmallHeader inline colour='white'>Shop</SmallHeader>
+              </ExternalLink>
+            </SpacedContainer>
           </DropdownLink>
         </DropdownMenu>
       </SmallScreenContainer>

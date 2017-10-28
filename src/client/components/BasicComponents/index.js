@@ -1,5 +1,5 @@
 import Image from './Image'
-import SocialMedia from './SocialMedia'
+import BrandBar, {defaultBrands} from './BrandBar'
 
 import {Icon} from './Icon'
 import {ColourBox} from './ColourBox/index'
@@ -62,9 +62,12 @@ export {
   Slider,
   Highlight,
   Modal,
-  SocialMedia,
+  BrandBar,
   DropdownMenu,
   BlogPost,
   Link,
   ExternalLink,
+
+  /* Data */
+  defaultBrands,
 }

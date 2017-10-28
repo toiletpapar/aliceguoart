@@ -13,7 +13,8 @@ import {
   Column,
   BorderContainer,
   SpacedContainer,
-  SocialMedia,
+  BrandBar,
+  defaultBrands,
   LargeHeader,
   MasonryImage,
   ExternalLink,
@@ -52,6 +53,18 @@ const DescriptionModal = (props) => {
     onClose,
   } = props
 
+  const customBrands = defaultBrands.map((brand) => {
+    if (brand.brand === 'etsy' && modalData.etsyUrl) {
+      return {
+        brand: 'etsy',
+        colour: 'black',
+        url: modalData.etsyUrl,
+      }
+    }
+
+    return brand
+  })
+
   const details = (spacing) => (
     <SpacedContainer spacing={spacing}>
       <LargeHeader margin='0em 0em 1em 0em'>{modalData.displayName}</LargeHeader>
@@ -66,7 +79,7 @@ const DescriptionModal = (props) => {
       }
       <BlockContainer>
         <Column align='flex-end' justify='flex-end'>
-          <SocialMedia spacing='10px 0px' etsyUrl={modalData.etsyUrl} />
+          <BrandBar spacing='10px 0px' brands={customBrands} />
           <Button onClick={onClose} padding='10px'>Close</Button>
         </Column>
       </BlockContainer>

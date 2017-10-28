@@ -14,7 +14,7 @@ import {
   Column,
   MultiColumnContainer,
   Anchor,
-  SocialMedia,
+  BrandBar,
   Image,
 } from '../BasicComponents/index'
 
@@ -72,14 +72,14 @@ const About = (props) => {
               </Column>
               <Column margin='0px 0px 0px 25px'>
                 <Paragraph>Or connect with us on social media:</Paragraph>
-                <SocialMedia spacing='0px' />
+                <BrandBar spacing='0px' />
               </Column>
             </MultiColumnContainer>
           </MidScreenContainer>
           <SmallScreenContainer>
             <Paragraph>Have a question or just want to comment? Send us an email to <Anchor href='mailto:alice@aliceguoart.ca' target='_top'>alice@aliceguoart.ca</Anchor>! We'd love to hear from you.</Paragraph>
             <Paragraph>Or connect with us on social media:</Paragraph>
-            <SocialMedia spacing='0px' />
+            <BrandBar spacing='0px' />
           </SmallScreenContainer>
         </SpacedContainer>
       </MainContainer>
