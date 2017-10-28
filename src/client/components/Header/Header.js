@@ -24,7 +24,7 @@ const FixedContainer = styled(BlockContainer)`
   width: ${(props) => props.theme.pad};
 `
 
-const SCREEN_PARTITION = 790
+const SCREEN_PARTITION = 950
 
 const MidScreenContainer = styled(MultiColumnContainer)`
   @media screen
