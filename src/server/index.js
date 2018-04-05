@@ -12,6 +12,7 @@ import App from '../client/App'
 import makeStore from '../client/store'
 import { compileInitialState } from '../client/reducers/InitialStates'
 
+console.log(process.env)
 const port = process.env.PORT || process.env.NODE_PORT || 9000
 const host = process.env.NODE_HOST || '127.0.0.1'
 const nodeEnv = process.env.NODE_ENV || 'development'
