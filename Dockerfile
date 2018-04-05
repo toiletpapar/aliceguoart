@@ -13,4 +13,3 @@ RUN npm --prefix /aliceguoart install bower
 RUN cd /aliceguoart && npx bower install --allow-root
 RUN npm --prefix /aliceguoart install
 RUN npm --prefix /aliceguoart run build
-RUN npm --prefix /aliceguoart run start:production

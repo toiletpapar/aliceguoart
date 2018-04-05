@@ -1,0 +1,1 @@
+npm --prefix /aliceguoart run start:production
