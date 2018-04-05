@@ -53,9 +53,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('styles.css'),
     new webpack.DefinePlugin({
-      'process.env': {
-        WEBPACK: true,
-      },
+      client: true,
     }),
     ...plugins,
   ],

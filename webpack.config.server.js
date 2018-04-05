@@ -18,9 +18,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      'process.env': {
-        WEBPACK: false,
-      },
+      client: false,
     }),
   ],
   module: {
